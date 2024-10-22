@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="retro">
+
+<head>
+    <title>Welcome | Fontelier AI</title>
+
+    <!-- Include Tailwind CSS with DaisyUI plugin via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        // Tailwind + DaisyUI Config
+        tailwind.config = {
+            plugins: [daisyui],
+            daisyui: {
+                themes: ["retro"],
+            }
+        };
+    </script>
+</head>
+
+
+<body class="bg-base-200 min-h-screen flex flex-col items-center justify-center space-y-4">
+    <!-- <div>
+        <ul class="steps my-1 w-full">
+            <li class="step step-primary"></li>
+            <li class="step"></li>
+            <li class="step"></li>
+        </ul>
+    </div> -->
+
+    <!-- Form Container -->
+    <div>
+        <form method="POST" class="card w-96 bg-white shadow-xl p-6 rounded-lg space-y-4">
+            <h2 class="text-2xl font-bold text-primary text-center">I want help finding...</h2>
+
+            <select name="option" class="select select-primary w-full">
+                <option disabled selected>I want help finding...</option>
+                <option>A single font</option>
+                <option>A font pair</option>
+            </select>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary transition-transform">
+                Next
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>

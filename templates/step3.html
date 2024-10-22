@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="retro">
+
+<head>
+    <title>Welcome | Fontelier AI</title>
+
+    <!-- Include Tailwind CSS with DaisyUI plugin via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        // Tailwind + DaisyUI Config
+        tailwind.config = {
+            plugins: [daisyui],
+            daisyui: {
+                themes: ["retro"],
+            }
+        };
+    </script>
+</head>
+
+<body class="bg-base-200 min-h-screen flex flex-col items-center justify-center space-y-4">
+    <progress class="progress progress-secondary w-96" value="60" max="100"></progress>
+
+    <!-- Form Container -->
+    <div>
+        <form method="POST" class="card w-96 bg-white shadow-xl p-6 rounded-lg space-y-4">
+            <h2 class="text-2xl font-bold text-primary text-left">Describe what you are using this font for.</h2>
+
+            <textarea name="description" class="textarea textarea-bordered" placeholder="Bio"></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary transition-transform">
+                Next
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>
