@@ -21,36 +21,59 @@
 
 <head>
 
-<body class="bg-base-200 min-h-screen flex flex-col items-center justify-center space-y-4">
-    <h2 class="text-2xl font-bold text-primary text-left"> Fonts generated:</h2>
+<body class="bg-base-200 min-h-screen flex flex-col items-center justify-center space-y-4"></body>
+    <div class="card w-96 bg-white shadow-xl p-6 rounded-lg space-y-4">
+        <h2 class="text-2xl font-bold text-primary text-left"> Fonts generated:</h2>
 
-    <h3 class="text-2xl font-bold text-primary text-left">User Data Summary:</h3>
-    <ul>
-        <li>Design: {{ data.get('option', 'N/A') }}</li>
-        <li>Text Type: {{ data.get('heading_type', 'N/A') }}</li>
-        <li>Custom Text Type: {{ data.get('description', 'N/A') }}</li>
-        <li>Mood: {{ data.get('mood', 'N/A') }}</li>
-    </ul>
+        <div class="overflow-x-auto">
+            <table class="table">
+              <!-- head -->
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Font name</th>
+                  <th>Author</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- row 1 -->
+                <tr>
+                  <th>1</th>
+                  <td>Inter</td>
+                  <td>Jane Doe</td>
+                </tr>
+                <!-- row 2 -->
+                <tr class="hover">
+                  <th>2</th>
+                  <td>Nunito</td>
+                  <td>Jane Doe</td>
+                </tr>
+                <!-- row 3 -->
+                <tr>
+                  <th>3</th>
+                  <td>Times New Roman</td>
+                  <td>Jane Doe</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+    </div>
 
-    <!-- <a href="{{ url_for('index') }}"><button>Restart</button></a> -->
+    <div class="card w-96 bg-white shadow-xl p-6 rounded-lg space-y-4">
+        <h2 class="text-2xl font-bold text-primary text-left">Your inputs:</h3>
+        <ul class="list-none space-y-4">
+            <li>Design: {{ data.get('option', 'N/A') }}</li>
+            <li>Text Type: {{ data.get('heading_type', 'N/A') }}</li>
+            <li>Custom Text Type: {{ data.get('description', 'N/A') }}</li>
+            <li>Mood: {{ data.get('mood', 'N/A') }}</li>
+        </ul>
+    </div>
+
     <form method="POST">
         <button type="submit" class="btn btn-primary transition-transform">
             Restart
         </button>
     </form>
-
-    <!-- Form Container -->
-    <!-- <div>
-        <form method="POST" class="card w-96 bg-white shadow-xl p-6 rounded-lg space-y-4">
-            <h2 class="text-2xl font-bold text-primary text-left">Describe what you are using this font for.</h2>
-
-            <textarea class="textarea textarea-bordered" placeholder="Bio"></textarea>
-
-            <button type="submit" class="btn btn-primary transition-transform">
-                Next
-            </button>
-        </form>
-    </div> -->
 </body>
 
 </html>
