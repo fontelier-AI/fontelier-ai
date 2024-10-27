@@ -78,6 +78,40 @@ def get_openai_embedding(cleaned_input):
 def cosine_similarity(a, b):
     return np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b))
 
+# Generate justifications between user's input and the top fonts
+def generate_justification(user_input, top_fonts):
+    try:
+        # Format the top fonts into a readable string
+        font_names = ", ".join([font[0] for font in top_fonts])
+
+        # Call GPT-3.5 to generate a justification
+        response = openai.ChatCompletion.create(
+            model="gpt-3.5-turbo",
+            messages=[
+                {
+                    "role": "system",
+                    "content": (
+                        "You are an expert in typography and design. Based on the following user input "
+                        "and font recommendations, provide a very brief justification of why these fonts were chosen. "
+                        "The justification should align with the user's description, mood, and use case."
+                    )
+                },
+                {
+                    "role": "user",
+                    "content": f"User input: {user_input}\nRecommended Fonts: {font_names}"
+                }
+            ]
+        )
+
+        # Extract and return the justification
+        justification = response.choices[0].message['content'].strip()
+        print(f"Justification: {justification}")  # For debugging
+        return justification
+
+    except Exception as e:
+        print(f"Error generating justification: {e}")
+        return "Could not generate a justification at this time."
+
 # Route to collect font option input
 @app.route('/step1', methods=['GET', 'POST'])
 def step1():
@@ -180,8 +214,12 @@ def result():
     # Sort by similarity and select the top 3 fonts
     top_fonts = sorted(similarities, key=lambda x: x[2], reverse=True)[:3]
 
+    # Generate a justification using GPT-3.5
+    justification = generate_justification(user_input, top_fonts)
+
     # Render the result page with the top 3 fonts
-    return render_template('result.html', data=user_data, api_result=top_fonts)
+    return render_template('result.html', data=user_data, api_result=top_fonts, justification=justification)
+
 
 
 # Home route to restart
