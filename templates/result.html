@@ -2,7 +2,7 @@
 <html lang="en" data-theme="retro">
 
 <head>
-    <title>Welcome | Fontelier AI</title>
+    <title>Font Recommendations | Fontelier AI</title>
 
     <!-- Include Tailwind CSS with DaisyUI plugin via CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css"/>
@@ -17,54 +17,50 @@
             }
         };
     </script>
+
+    <!-- Dynamic Google Fonts -->
+    {% for font in api_result %}
+    <link href="https://fonts.googleapis.com/css2?family={{ font[0] | replace(' ', '+') }}&display=swap" rel="stylesheet">
+    {% endfor %}
 </head>
 
-<head>
-
-<body class="bg-base-200 min-h-screen flex flex-col items-center justify-center space-y-4"></body>
+<body class="bg-base-200 min-h-screen flex flex-col items-center justify-center space-y-8">
+    
     <div class="card w-96 bg-white shadow-xl p-6 rounded-lg space-y-4">
-        <h2 class="text-2xl font-bold text-primary text-left"> Fonts generated:</h2>
+        <h2 class="text-2xl font-bold text-primary text-left">Top 3 Recommended Fonts:</h2>
 
         <div class="overflow-x-auto">
             <table class="table">
-              <!-- head -->
-              <thead>
-                <tr>
-                  <th></th>
-                  <th>Font name</th>
-                  <th>Author</th>
-                </tr>
-              </thead>
-              <tbody>
-                <!-- row 1 -->
-                <tr>
-                  <th>1</th>
-                  <td>Inter</td>
-                  <td>Jane Doe</td>
-                </tr>
-                <!-- row 2 -->
-                <tr class="hover">
-                  <th>2</th>
-                  <td>Nunito</td>
-                  <td>Jane Doe</td>
-                </tr>
-                <!-- row 3 -->
-                <tr>
-                  <th>3</th>
-                  <td>Times New Roman</td>
-                  <td>Jane Doe</td>
-                </tr>
-              </tbody>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Font Preview</th>
+                        <th>Description</th>
+                        <th>Similarity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for font in api_result %}
+                    <tr class="hover">
+                        <th>{{ loop.index }}</th>
+                        <td style="font-family: '{{ font[0] }}';">
+                            The quick brown fox jumps over the lazy dog.
+                        </td>
+                        <td>{{ font[1] }}</td>
+                        <td>{{ "%.2f" | format(font[2] * 100) }}%</td> <!-- Display similarity as a percentage -->
+                    </tr>
+                    {% endfor %}
+                </tbody>
             </table>
-          </div>
+        </div>
     </div>
 
     <div class="card w-96 bg-white shadow-xl p-6 rounded-lg space-y-4">
-        <h2 class="text-2xl font-bold text-primary text-left">Your inputs:</h3>
+        <h2 class="text-2xl font-bold text-primary text-left">Your Inputs:</h2>
         <ul class="list-none space-y-4">
             <li>Design: {{ data.get('option', 'N/A') }}</li>
             <li>Text Type: {{ data.get('heading_type', 'N/A') }}</li>
-            <li>Custom Text Type: {{ data.get('description', 'N/A') }}</li>
+            <li>Description: {{ data.get('description', 'N/A') }}</li>
             <li>Mood: {{ data.get('mood', 'N/A') }}</li>
         </ul>
     </div>
@@ -74,6 +70,7 @@
             Restart
         </button>
     </form>
+
 </body>
 
 </html>
