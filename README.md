@@ -16,8 +16,4 @@ This project is a group assignment for DECO3000: Designing Intelligent Systems.
 ## Developing Team
 - Jessica Tan 
 - Serena Huang
-<<<<<<< HEAD
 - Milly Garde
-=======
-- Milly Gard
->>>>>>> openai-clean-text

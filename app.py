@@ -4,7 +4,6 @@ import json
 import os
 import numpy as np
 import csv
-from dotenv import load_dotenv
 
 # Load the API key
 def load_api_key():
@@ -18,6 +17,7 @@ def load_api_key():
 api_key = load_api_key()
 openai.api_key = api_key
 
+
 app = Flask(__name__)
 
 # Store user input data
@@ -26,7 +26,7 @@ user_data = {}
 # Load pre-computed font embeddings from CSV
 def load_font_embeddings():
     font_data = []
-    with open('font_embeddings_with_vectors.csv', mode='r') as file:
+    with open('data/font_embeddings_with_vectors.csv', mode='r') as file:
         reader = csv.DictReader(file)
         for row in reader:
             font_data.append({
@@ -36,7 +36,7 @@ def load_font_embeddings():
             })
     return font_data
 
-# Step 1: Clean and extract meaning using GPT-3.5
+# Clean and extract meaning using GPT-3.5
 def clean_and_extract_meaning(user_input):
     try:
         response = openai.ChatCompletion.create(
@@ -60,7 +60,7 @@ def clean_and_extract_meaning(user_input):
         print(f"Error in cleaning input: {e}")
         return user_input  # Fall back to original input if GPT fails
 
-# Step 2: Generate embedding using text-embedding-ada-002
+# Generate embedding using text-embedding-ada-002
 def get_openai_embedding(cleaned_input):
     try:
         response = openai.Embedding.create(
@@ -144,41 +144,7 @@ def step4():
         return redirect(url_for('result'))
     return render_template('step4.html')
 
-# @app.route('/result', methods=['GET', 'POST'])
-# def result():
-#     if request.method == 'POST':
-#         return redirect(url_for('index'))
-
-#     # Combine user input into a single string
-#     user_input = f"{user_data['option']} {user_data['heading_type']} {user_data['description']} {user_data['mood']}"
-
-#     # Generate embedding from OpenAI
-#     user_embedding = get_openai_embedding(user_input)
-
-#     if user_embedding is None:
-#         return render_template('result.html', data=user_data, api_result=[
-#             {"name": "Error", "description": "Failed to generate recommendations.", "similarity": 0.0}
-#         ])
-
-#     # Load font embeddings
-#     font_data = load_font_embeddings()
-
-#     # Calculate cosine similarity for each font
-#     similarities = [
-#         (
-#             font["name"],
-#             font["description"],
-#             cosine_similarity(user_embedding, font["embedding"])
-#         )
-#         for font in font_data
-#     ]
-
-#     # Sort by similarity and select the top 3 fonts
-#     top_fonts = sorted(similarities, key=lambda x: x[2], reverse=True)[:3]
-
-#     # Render the result page with the top 3 fonts
-#     return render_template('result.html', data=user_data, api_result=top_fonts)
-
+# Route to process user input and display results
 @app.route('/result', methods=['GET', 'POST'])
 def result():
     if request.method == 'POST':
@@ -187,10 +153,10 @@ def result():
     # Combine user input into a single string
     user_input = f"{user_data.get('option', '')} {user_data.get('heading_type', '')} {user_data.get('description', '')} {user_data.get('mood', '')}".strip()
 
-    # Step 1: Clean and extract meaning from user input
+    # Clean and extract meaning from user input
     cleaned_input = clean_and_extract_meaning(user_input)
 
-    # Step 2: Generate embedding from OpenAI
+    # Generate embedding from OpenAI
     user_embedding = get_openai_embedding(cleaned_input)
 
     if user_embedding is None:
