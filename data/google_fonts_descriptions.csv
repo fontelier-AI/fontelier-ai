@@ -1,0 +1,1075 @@
+Font Name,Description
+opensans,"Open Sans is a humanist sans serif typeface designed by Steve Matteson, Type Director of Ascender Corp.
+This version contains the complete 897 character set, which includes the standard ISO Latin 1, Latin CE, Greek and Cyrillic character sets.
+Open Sans was designed with an upright stress, open forms and a neutral, yet friendly appearance.
+It was optimized for print, web, and mobile interfaces, and has excellent legibility characteristics in its letterforms.
+ 
+ 
+In March 2021, the family has been updated to a variable font family and it also includes Hebrew, and unified and simplified the licensing under OFL.
+ 
+ 
+To contribute, see  github.com/googlefonts/opensans"
+roboto,"Roboto has a dual nature. 
+It has a mechanical skeleton and the forms are largely geometric. 
+At the same time, the font features friendly and open curves. 
+While some grotesks distort their letterforms to force a rigid rhythm, Roboto doesn’t compromise, allowing letters to be settled into their natural width. 
+This makes for a more natural reading rhythm more commonly found in humanist and serif types.
+ 
+ 
+ Updated July 2020:  Upgraded to a variable font with Weight and Width axes, that closely match the previous static fonts released as two families, this one and a sibling Roboto Condensed family. 
+ 
+ 
+Roboto is part of a superfamily set that includes  Roboto Slab  and  Roboto Mono 
+ 
+ 
+To report issues or contribute, see  github.com/TypeNetwork/Roboto . This repository also contains further font builds for different platforms."
+montserrat,"The old posters and signs in the traditional  Montserrat  neighborhood of Buenos Aires inspired Julieta Ulanovsky to design this typeface and rescue the beauty of urban typography that emerged in the first half of the twentieth century. 
+As urban development changes that place, it will never return to its original form and loses forever the designs that are so special and unique. 
+The letters that inspired this project have work, dedication, care, color, contrast, light and life, day and night! 
+These are the types that make the city look so beautiful.
+The Montserrat Project began with the idea to rescue what is in Montserrat and set it free under a libre license, the SIL Open Font License.
+ 
+ 
+This is the normal family, and it has two sister families so far,  Alternates  and  Subrayada . 
+Many of the letterforms are special in the Alternates family, while 'Subrayada' means 'Underlined' in Spanish and celebrates a special style of underline that is integrated into the letterforms found in the  Montserrat  neighborhood.
+ 
+ 
+Updated November 2017: The family was redrawn by Jacques Le Bailly at  Baron von Fonthausen  over the summer, and the full set of weights were adjusted to make the Regular lighter and better for use in longer texts. 
+In fall, Julieta Ulanovsky, Sol Matas, and Juan Pablo del Peral, led the development of Cyrillic support, with consultation with Carolina Giovagnoli, Maria Doreuli, and Alexei Vanyashin.
+ 
+ 
+The Montserrat project is led by Julieta Ulanovsky, a type designer based in Buenos Aires, Argentina. 
+To contribute, see  github.com/JulietaUla/Montserrat"
+poppins,"Geometric sans serif typefaces have always been popular, and with support for both the Devanagari and Latin writing systems, Poppins is an internationalist addition to the genre.
+ 
+ 
+Many of the Latin glyphs (such as the ampersand) are more constructed and rationalist than is typical. 
+The Devanagari design was particularly novel when it was first published in 2015, and was the first ever Devanagari typeface with a range of weights in this genre.
+Just like the Latin, the Devanagari is based on pure geometry, particularly circles.
+ 
+ 
+Each letterform is nearly monolinear, with optical corrections applied to stroke joints where necessary to maintain an even typographic color. 
+The Devanagari base character height and the Latin ascender height are equal;
+Latin capital letters are shorter than the Devanagari characters, and the Latin x-height is set rather high.
+ 
+ 
+The project was developed by Indian Type Foundry (ITF).
+The Devanagari was initially designed by Ninad Kale, while the Latin was initially designed by Jonny Pinhorn.
+Following their principal phase of designing the first 5 styles, the typeface was later refined, and expanded to include multiple weights and italics, by the ITF studio team.
+ 
+ 
+To contribute, see  github.com/itfoundry/poppins"
+lato,"Lato means “Summer” in Polish, and it is a sans serif typeface family started in the summer of 2010 by Warsaw-based designer Łukasz Dziedzic.
+Originally conceived as part of a corporate identity for a large client, the family became available for a public release when they decided to go in different stylistic direction. 
+ 
+ 
+Łukasz tried to carefully balance some potentially conflicting priorities in the design; 
+to create a typeface that seems “transparent” when used in body text but also displays original traits in larger size use. 
+Classical proportions, particularly in the uppercase, give the letterforms familiar harmony and elegance, and combine with a sleek treatement that feels contemporary without being trendy. 
+Semi-rounded details feel warm, while the underlying structure provides stability and seriousness. 
+“Serious but friendly, with the feeling of the Summer,” said Łukasz. 
+ 
+ 
+Learn more at  latofonts.com"
+merriweather,"Merriweather was designed to be a text face that is pleasant to read on screens.
+It features a very large x height, slightly condensed letterforms, a mild diagonal stress, sturdy serifs and open forms.
+ 
+ 
+There is also  Merriweather Sans , a sans-serif version which closely harmonizes with the weights and styles of this serif family.
+ 
+ 
+The Merriweather project is led by Sorkin Type, a type design foundry based in Western Massachaussets, USA.
+To contribute, see  github.com/SorkinType/Merriweather"
+playfairdisplay,"Playfair is a transitional design. 
+In the European Enlightenment in the late 18th century, broad nib quills were replaced by pointed steel pens as the popular writing tool of the day.
+Together with developments in printing technology, ink, and paper making, it became fashionable to print letterforms of high contrast and delicate hairlines that were increasingly detached from the written letterforms.
+This design lends itself to this period, and while it is not a revival of any particular design, it takes influence from the designs of John Baskerville and from ‘Scotch Roman’ designs.
+ 
+ 
+This typeface was initially published in 2011, and had a major update in 2017.
+Being a Display (large size) design in the transitional genre, functionally and stylistically it can accompany Georgia or  Gelasio  for body text.
+It was succeeded in 2023 by the complete  Playfair  design, which as a variable font includes body text designs in the optical size axis.
+ 
+ 
+This is the main family, with a sibling  Playfair Display SC  small caps family. 
+The main family downloaded font files include a full set of small caps, common ligatures, and discretionary ligatures.
+ 
+ 
+The Playfair project is led by Claus Eggers Sørensen, a type designer based in Amsterdam, Netherlands. 
+To contribute, see  github.com/clauseggers/Playfair-Display"
+sourcecodepro,"Source Code was designed by Paul D. Hunt as a companion to Source Sans.This complementary family was adapted from the Source design due to a request to create a monospaced version for coding applications. Source Code preserves the design features and vertical proportions of Source Sans, but alters the glyph widths so that they are uniform across all glyphs and weights. 
+ Although this family was designed specifically for coding environments, for which a regular weight will typically suffice, Source Code has been made available in the same weight range as the corresponding Source Sans design.Source Code Pro currently supports a wide range of languages using the Latin script, and includes all the characters in the Adobe Latin 4 glyph set. 
+ As an open source project, it is expected that incremental updates will be made over time to extend glyph set coverage and functionality. In 2019, we have updated the family to  Roman v2.030 and Italic v1.050 . This update now supports Greek, Cyrillic, Vietnamese and Italic styles. 
+ To contribute, see  github.com/adobe-fonts/source-code-pro ."
+inconsolata,"Inconsolata was Raph Levien's first serious original font release. 
+It is a monospace font, designed for printed code listings and the like. 
+There are a great many “programmer fonts,” designed primarily for use on the screen, but in most cases do not have the attention to detail for high resolution rendering.
+ 
+ 
+Inconsolata draws from many inspirations and sources. 
+I was particularly struck by the beauty of Luc(as) de Groot's Consolas, which is his monospaced design for Microsoft's Vista release. 
+This font, similar to his earlier TheSansMono, demonstrated clearly to me that monospaced fonts do not have to suck.
+ 
+ 
+The development of the Regular style by Raph Levien was started in 2006 using his own Spiro-based tools and FontForge.
+The Bold style was designed by Kirill Tkachev and the Cyreal foundry in 2012.
+ 
+ 
+ Updated September 2015:  Internal metadata corrected.
+ 
+ 
+ Updated April 2020:  Family has been upgraded to a variable font family.
+ 
+ To contribute, see  github.com/googlefonts/inconsolata ."
+dancingscript,"Dancing Script is a lively casual script where the letters bounce and change size slightly. Caps are big, and goes below the baseline.   Dancing Script references popular scripts typefaces from the 50's.   It relates to Murray Hill (Emil Klumpp. 1956) in his weight distribution, and to Mistral (Roger Excoffon. 1953) in his lively bouncing effect.   Use it when you want a friendly, informal and spontaneous look.   Updated May 18th 2011 with bold! 
+ In November 2019, it was updated with a Variable Font ""Weight"" axis. 
+ To contribute, see  github.com/impallari/DancingScript ."
+oswald,"Oswald is a reworking of the classic style historically represented by the 'Alternate Gothic' sans serif typefaces.
+The characters of Oswald were initially re-drawn and reformed to better fit the pixel grid of standard digital screens.
+Oswald is designed to be used freely across the internet by web browsers on desktop computers, laptops and mobile devices.
+ 
+ 
+- Since the initial launch in 2011, Oswald was updated continually by Vernon Adams until 2014.
+Vernon added Light and Bold weights, support for more Latin and Cyrillic languages, tightened the spacing and kerning and made many glyph refinements throughout the family based on hundreds of users' feedback. 
+- In 2016 the Latin part of the family was updated by Kalapi Gajjar to complete the work started by Vernon. 
+- In January 2019, it was updated with a variable font Weight axis. 
+- In July 2023, the font was upgraded with a Cyrillic character set expansion, and the rendering of math symbols was improved.
+ 
+ 
+To contribute, see  github.com/googlefonts/OswaldFont"
+kanit,"Kanit means mathematics in Thai, and the Kanit typeface family is a formal Loopless Thai and Sans Latin design.
+It is a combination of concepts, mixing a Humanist Sans Serif motif with the curves of Capsulated Geometric styles that makes it suitable for various uses, contemporary and futuristic.
+A notable detail is that the stroke terminals have flat angles, which allows the design to enjoy decreased spacing between letters while preserving readability and legibility at smaller point sizes.
+ 
+ 
+In Thai typeface design the formal loopless Thai typefaces have more simple forms than the conservative looped Thai designs, and this simplification has to be done properly in order to preserve the essential character of each letter. 
+Sizes and positions of vowels and tone marks need to be managed carefully because they are all relevant to readability, legibility, and overall textures.
+When designing Kanit, special care was taken with some groups of letters such as ก ถ ภ ฤ ฦ, ฎ ฏ, บ ป, and ข ช to ensure they are distinct and legible, because it might lead to confusion if each glyph is not clear enough.
+ 
+ 
+Kanit is the first Thai font family to be hinted with  TTFAutohint , an easy-to-use hinting tool that is highly recommended.
+ 
+ 
+The Kanit project is led by Cadson Demak, a type foundry in Thailand.
+To contribute, see  github.com/cadsondemak/kanit"
+firasans,"Designed to integrate with the character of the Mozilla FirefoxOS, the Fira typefaces also aim to cover the legibility needs for a large range of handsets varying in screen quality and rendering.
+ 
+ 
+The Fira font family comes in 3 widths, all accompanied by italic styles. 
+The package also includes a  Mono Spaced variant .
+ 
+ 
+This project is led by  Carrois , a type foundry based in Berlin. 
+To contribute, see  github.com/mozilla/Fira"
+nunito,"Nunito is a well balanced sans serif typeface superfamily, with 2 versions:
+    The project began with Nunito, created by Vernon Adams as a rounded terminal sans serif for display typography.
+    Jacques Le Bailly extended it to a full set of weights, and an accompanying regular non-rounded terminal version,  Nunito Sans .
+ 
+ 
+    To contribute, see  github.com/googlefonts/nunito ."
+raleway,"Raleway is an elegant sans-serif typeface family. 
+Initially designed by Matt McInerney as a single thin weight, it was expanded into a 9 weight family by Pablo Impallari and Rodrigo Fuenzalida in 2012 and iKerned by Igino Marini.
+A thorough review and italic was added in 2016.
+ 
+ 
+It is a display face and the download features both old style and lining numerals, standard and discretionary ligatures, a pretty complete set of diacritics, as well as a stylistic alternate inspired by more geometric sans-serif typefaces than its neo-grotesque inspired default character set.
+ 
+ 
+It also has a sister family,  Raleway Dots .
+ 
+ 
+More information can be found at  theleagueofmoveabletype.com/raleway  and  impallari.com/fonts/raleway 
+ 
+ 
+To contribute to the project, visit  github.com/impallari/Raleway"
+abrilfatface,"Abril Fatface is part of a bigger type family system, Abril, which includes 18 styles for all Display and Text uses. The titling weights are a contemporary revamp of classic Didone styles, display both neutrality and strong presence on the page to attract reader attention with measured tension by its curves, good color and high contrast.   Abril Fatface in particular is inspired by the heavy titling fonts used in advertising posters in 19th century Britain and France. The thin serifs and clean curves lend the typeface a refined touch that give any headline an elegant appearance. The Extended Latin character set supports over 50 languages, including those from Central and Northern Europe.   Abril is designed by TypeTogether - Veronika Burian & José Scaglione. The additional weights of Abril can be seen at  www.type-together.com/Abril"
+alegreya,"Alegreya was chosen as one of 53 ""Fonts of the Decade"" at the ATypI Letter2 competition in September 2011, and one of the top 14 text type systems. It was also selected in the 2nd Bienal Iberoamericana de Diseño, competition held in Madrid in 2010. 
+ Alegreya is a typeface originally intended for literature. Among its crowning characteristics, it conveys a dynamic and varied rhythm which facilitates the reading of long texts. Also, it provides freshness to the page while referring to the calligraphic letter, not as a literal interpretation, but rather in a contemporary typographic language. 
+ The italic has just as much care and attention to detail in the design as the roman. The bold weights are strong, and the Black weights are really experimental for the genre. There is also a   Small Caps  sibling family. 
+ Not only does Alegreya provide great performance, but also achieves a strong and harmonious text by means of elements designed in an atmosphere of diversity. 
+ The Alegreya type system is a ""super family"", originally intended for literature, and includes serif and  sans serif  sister families. 
+ Designed by Juan Pablo del Peral for  Huerta Tipográfica . 
+ To contribute, see  github.com/huertatipografica/Alegreya ."
+cabin,"Cabin is a humanist sans inspired by Edward Johnston's and Eric Gill's typefaces, with a touch of modernism.
+Cabin incorporates modern proportions, optical adjustments, and some elements of the geometric sans.
+It remains true to its roots, but has its own personality.
+ 
+ 
+The Cabin font family comes in two variable fonts, roman and true italic, with a Weight range from Regular to Bold, and a Width range from normal to Condensed.
+The stroke contrast is almost monolinear, although top and bottom curves are slightly thinned.
+Counters of the b, g, p and q are rounded, and all are optically adjusted.
+ 
+ 
+Cabin has wide language support, including full Latin coverage of Vietnamese, additional to all Western, Central, and South/Eastern European languages.
+ 
+ 
+To contribute, see  github.com/impallari/Cabin"
+courgette,"Foundry:  Sorkin Type Co 
+ Courgette is a medium low contrast brushy italic script type. A brushy italic style is traditionally for display and unsurprisingly Courgette works well in display. However Courgette's low contrast and carefully made forms mean that it also works well in smaller sizes and even in massed text. 
+ Source files are available from  Google Code .
+To contribute to the project contact  Eben Sorkin ."
+hind,"Hind is an Open Source typeface supporting the Devanagari and Latin scripts. 
+Developed explicitly for use in User Interface design, the Hind font family includes five styles. 
+Hind’s letterforms have a humanist-style construction, which is paired with seemingly monolinear strokes. 
+Most of these strokes have flat endings: they either terminate with a horizontal or a vertical shear, rather than on a diagonal. 
+This helps create clear-cut counter forms between the characters. 
+In addition to this, Hind’s letterforms feature open apertures. 
+The entire typeface family feels very legible when used to set text.
+ 
+ 
+The Devanagari and Latin script components are scaled in relation to each other so that the Devanagari headline falls just below the Latin capital-height. 
+In other words, the Devanagari base characters are 94% as tall as the Latin uppercase. 
+Text set in the Devanagari script sits nicely alongside the Latin lowercase, too. 
+Hind’s Devanagari vowel marks take forms that tends toward the traditional end of the design spectrum, while the knotted terminals inside of the base characters feature a treatment that appears more contemporary.
+ 
+ 
+Each font in the Hind family has 1146 glyphs, which include hundreds of unique Devanagari conjuncts. 
+These ensure full support for the major languages written with the Devanagari script. 
+The Latin component’s character set is a basic western one, which enables typesetting in English and the other Western European languages. 
+Hind is a solid choice for UI design, and a wise selection for electronic display embedding.
+ 
+ 
+Manushi Parikh designed Hind for the Indian Type Foundry, who first published the fonts in 2014.
+ 
+ 
+The Hind project is led by Indian Type Foundry, a type design foundry based in Ahmedabad, India. 
+To contribute, see  github.com/itfoundry/hind"
+ptserif,"PT Serif™ is the second pan-Cyrillic font family developed for the project “Public Types of the Russian Federation.” The first family of the project, PT Sans, was released in 2009.   The fonts are released with a libre license and can be freely redistributed: The main aim of the project is to give possibility to the people of Russia to read and write in their native languages.   The project is dedicated to the 300 year anniversary of the civil type invented by Peter the Great in 1708–1710. It was given financial support from the Russian Federal Agency for Press and Mass Communications.   The fonts include standard Western, Central European and Cyrillic code pages, plus the characters of every title language in the Russian Federation. This makes them a unique and very important tool for modern digital communications.   PT Serif is a transitional serif typeface with humanistic terminals. It is designed for use together with PT Sans, and is harmonized across metrics, proportions, weights and design.   The family consists of six styles: regular and bold weights with corresponding italics form a standard font family for basic text setting; two caption styles in regular and italic are for use in small point sizes.   Designed by Alexandra Korolkova,  Olga Umpeleva  and  Vladimir Yefimov  and released by  ParaType  in 2010."
+manrope,"Manrope is an open-source modern sans-serif font family, designed by Mikhail Sharanda in 2018. In 2019, Mirko Velimirovic worked with Mikhail Sharanda to convert Manrope into a variable font. 
+ To contribute, see  github.com/sharanda/manrope ."
+balsamiqsans,"Balsamiq Sans is the handwritten font created for the Balsamiq Wireframes and has been in use since version 2.1. 
+ The font contains 942 glyphs in 2 weights with italics/obliques, and includes the basic and extended latin character set, Cyrillic, Basic Symbols and Dingbats, Math and Technical Symbols, and punctuation 
+ To contribute, see  github.com/balsamiq/balsamiqsans"
+overpass,"Overpass is a free, Open Source typeface designed by  Delve Fonts . The design of Overpass is an interpretation of the well-known “Highway Gothic” letterforms from the Standard Alphabets for Traffic Control Devices published by the U.S. Federal Highway Administration. Starting from those specifications, critical adjustments were made to the letterforms to create an optimal presentation at smaller sizes on-screen and later for display sizes, especially in the lighter weights. 
+ Also see  Overpass Mono! 
+ Overpass can be used for everything from extended passages of text in print and online, to UI design, posters, wayfinding signage, and environmental graphic design. 
+ 
+ Designers: Delve Withrington, Dave Bailey, and Thomas Jockin 
+ TrueType Hinting: Jason Campbell 
+ Direction: Dave Crossland, Andy Fitzsimon, Jakub Steiner, and Ben Dubrovsky 
+ Special thanks: Aaron Bell for his diligence in preparing v4.0 for release and Michael Luton for his insight and support. 
+ 
+ To contribute to the project, please visit  https://github.com/RedHatOfficial/Overpass"
+saira,"Saira is a sans serif system.
+It features a huge range of weights and widths, ready for all kind of typographic challenges.
+ 
+ 
+This is the Normal family, which is part of the superfamily along with
+ Semi Condensed ,
+ Condensed , and
+ Extra Condensed ,
+each with 9 weights.
+ 
+ 
+    Saira has been upgraded in 2020 to a variable font with axes for weight and width, adding expanded widths to the superfamily.
+ 
+ 
+This typeface was designed by Hector Gatti and developed by the Omnibus Type team.
+To contribute to the project, visit  github.com/Omnibus-Type/Saira"
+asap,"Asap (""as soon as possible"") is a contemporary sans-serif family with subtle rounded corners. This family, specially developed for screen and desktop use, offers a standarised character width on all styles, which means lines of text remain the same length. This useful feature allows users to change type styles on-the-go without reflowing a text body.  
+ Asap has been upgraded to a variable font in 2021, and in October 2022, this variable is completed by a width axis and a larger scope of weight. Axes weight now go from Thin to Black and width from Condensed to Expanded. 
+ Asap is based on Ancha (Pablo Cosgaya, Hector Gatti). It is designed by Pablo Cosgaya and Omnibus-Type Team, with the collaboration of Andrés Torresi. To contribute, see  github.com/Omnibus-Type/Asap ."
+crimsonpro,"Crimson Pro is a serif typeface family: Contemporary, clear, classic and rounded/open. Something for a college textbook, editorial websites and any reading experience with book-length texts
+It contributes to the tradition of beautiful Garamond-inspired typefaces, often called “Garalde” or “Old Style,” and has 8 named weights, in Roman and Italic, and is available as a Variable Font with a Weight axis.
+ 
+ 
+The first Crimson design was initiated by Sebastian Kosch in 2009, and he later completely redrew a new version called Crimson Prime.
+Google commissioned Jacques Le Bailly to review both typefaces, and develop Crimson Pro as a new design that synthesises both designs into a final authoritative family, first released in January 2019.
+All decisions were made to enable better readability for longer texts and the ability to make good and diverse typography.
+ 
+ 
+The Crimson Pro project is led by Jacques Le Bailly, a type designer based in Den Haag, Netherlands. 
+To contribute, see  github.com/Fonthausen/CrimsonPro"
+josefinsans,"The idea of this typeface is to be geometric, elegant, with a vintage feeling, for use at larger sizes.
+It is inspired by geometric sans serif designs from the 1920s.
+The x-height is half way from baseline to cap height, an unusual proportion.
+ 
+ 
+There is a sister family,  Josefin Slab 
+ 
+ 
+In December 2019, it was updated with a Variable Font ""Weight"" axis.
+ 
+ 
+To contribute, see  github.com/googlefonts/josefinsans ."
+teko,"Teko is an Open Source typeface that currently supports the Devanagari and Latin scripts. This font family has been created for use in headlines and other display-sized text on screen. Five font styles make up the initial release. 
+ Display families with extensive character sets are rare for any script. With Indian typefaces, however, large character sets are even less common. ITF’s designs are an exception. The Teko typeface features letterforms with low stroke contrast, square proportions and a structure that appears visually simple. 
+ The Regular, Medium and Semibold fonts are recommended for use in long headlines, while Bold is intended primarily for setting just one or two words. The Light is a beautiful variant that may be put to exceptionally good use in large headlines on websites. At display sizes, Teko works equally well on screen or in print. Each font contains 1090 glyphs, offering full support for the conjuncts and ligatures required by languages written with the Devanagari script. Teko is an excellent choice for use in advertising or for news tickers on television screens (breaking news, etc.) 
+ Manushi Parikh designed the Teko typeface for the Indian Type Foundry, who published it in 2014. 
+ In 2023, Marc Foley converted the family to a variable font. 
+ To contribute, see  github.com/googlefonts/teko ."
+questrial,"Questrial is the perfect font for body text and headlines on a website.
+It's modern style, suited with past characteristics of great typefaces, make it highly readable in any context.
+The full-circle curves on many characters make Questrial a great font to blend seamlessly with other fonts while still maintaining it's uniqueness.
+ 
+ 
+It is heavily influenced by Swiss design, similar to a grotesk style which is closely found in Helvetica.
+The numbers in Questrial are tabular figures so they can be used in tables and forms to enable maximum satisfaction.
+ 
+ 
+Questrial language support includes African Latin and full coverage of Vietnamese, additional to all Western, Central, and South-Eastern European languages.
+ 
+ 
+To contribute see  github.com/googlefonts/questrial"
+jost,"Jost is an original font created by indestructible type*. It is inspired by 1920s German sans-serifs. This is version 3.7.
+
+Jost is designed and maintained by Owen Earl, who is the creator of the font foundry indestructible type*.
+
+in 2020 Owen Earl, and Mirko Velimirovic worked together to make Jost a variable font. 
+ If you have questions or want to help out, please contribute at
+ github.com/indestructible-type/Jost ."
+indieflower,"This handwriting font feels carefree and open to me with the bubbly, rounded edges. It is easy to read and a bit bolder than some of my other fonts."
+vibes,"Vibes is a typeface designed for Arabic, as well as English languages. It was designed to be a mixture that radiates energy, flexibility, and cuteness. It is specially designed to be used for title texts. Acknowledgements goes to Nadine Chahine, where this work wouldn't incepted without her help. 
+ To contribute, see  github.com/bluemix/vibes-typeface ."
+anton,"Anton is a reworking of a traditional advertising sans serif typeface. The
+letter forms have been digitised and then reshaped for use as a webfont, the
+counters have been opened up a little and the stems optimised for use as bold
+display font in modern web browsers.
+ 
+ 
+Anton language support includes now African Latin and full coverage of Vietnamese, additional to all Western, Central, and South-Eastern European languages.
+ 
+  
+To contribute see  github.com/googlefonts/AntonFont ."
+volkhov,"Volkhov is a low-contrast seriffed typeface with a robust character, intended for providing a motivating reading experience.   As a four-weight family it is well-suited for complex text environments being economic and legible, contemporary and prominent. Many of its design solutions relate to this purpose: large open counters, rather short descenders, and brutal asymmetric serifs.   Spacing in Bold is slightly increased compared to the normal weight, because the bold mass is mostly grown inwards. The Italic has a steep angle and a distinctive calligraphically reminiscent character, as a counterpart to the rigorous Regular.   Designed by Ivan Petrov."
+archivo,"Archivo is a grotesque sans serif typeface family originally designed for highlights and headlines. This family is reminiscent of late nineteenth century American typefaces. The technical and aesthetic characteristics of the font are both crafted for high performance typography. It was designed to be used simultaneously in print and online platforms and supports over 200 world languages. 
+ Archivo has been upgraded to a variable font in 2021. The weight and width axes allow a wide variety of styles, from Thin to Black and from ExtraCondensed to Expanded. 
+ Archivo is designed by Héctor Gatti and Omnibus-Type Team. To contribute to the project visit  github.com/Omnibus-Type ."
+lexend,"Lexend fonts are intended to reduce visual stress and so improve reading performance. Initially they were designed with dyslexia and struggling readers in mind, but Bonnie Shaver-Troup, creator of the Lexend project, soon found out that these fonts are
+    also great for everyone else.
+ 
+ 
+    The first set of Lexend fonts by Thomas Jockin (
+     Deca ,
+     Exa ,
+     Giga ,
+     Mega ,
+     Peta ,
+     Tera ,
+     Zetta ) becomes wider and more openly spaced (also known as ""tracked out""). This new version of Lexend is a variable font with a weight axis.
+ 
+ 
+    Please note that the initial release of this font had a lighter Regular weight. It has been decided for the update of July 2021 to align the Regular weight with the one of Lexend Deca which is slightly bolder. Lexend and Lexend Deca are therefore the
+    same (for now…). Ultimately this version will offer a HyperExpansion axis which will allow variation of inner and outer space of letterforms. 
+ 
+    True to Bonnie’s vision, Lexend fonts are freely available for all since 2019 in Google Fonts.
+ 
+ 
+    To contribute, see  github.com/googlefonts/lexend . For more information, see  lexend.com .
+ 
+ 
+    To learn more, read  Clean and clear: making reading easier with Lexend (English),  Partnering to change how the world reads (English),
+    and  Eine Partnerschaft mit dem Ziel, das Leseerlebnis weltweit zu verändern (Germany)."
+kalam,"Kalam is a handwriting-style typeface supporting the Devanagari and Latin scripts.
+This is an Open Source font family first published by the Indian Type Foundry in 2014.
+ 
+ 
+Even though Kalam's letterforms derive from handwriting, the fonts have each been optimised for text on screen.
+All in all, the typeface is a design that feels very personal.
+Like many informal handwriting-style fonts, it appears rather fresh and new when seen on screen or printed on the page.
+Kalam's letterforms feature a very steep slant from the top right to the bottom left.
+They are similar to letters used in everyday handwriting, and look like they might have been written with either a thin felt-tip pen, or a ball-point pen.
+In the Devanagari letterforms, the knotted-terminals are open, but some other counter forms are closed.
+Features like these strengthen the feeling that text set in this typeface has been written very quickly, in a rapid manner.
+ 
+ 
+Kalam is available in three weights: Light, Regular and Bold.
+Each font contains 1,025 glyphs, which includes many unique Devanagari conjuncts.
+These ensure full support for the major languages written with the Devanagari script.
+The Latin component's character set is a basic western one, which enables typesetting in English and the other Western European languages.
+Lipi Raval and Jonny Pinhorn developed the family for ITF; Raval designed the Devanagari component while she and Pinhorn worked together on the Latin.
+ 
+ 
+The Kalam project is led by Indian Type Foundry, a type design foundry based in Ahmedabad, India. To contribute, see  github.com/itfoundry/kalam 
+ 
+ 
+ Updated July 2015:  Updated to v2.001 with improved OpenType features."
+signika,"Signika variable font is a sans-serif with a gentle character, developed for wayfinding, signage, and other media where clarity of information is required.
+    It has a low contrast and tall x-height to improve readability of texts in small sizes as well as in large distances from the reader.
+    Being a typical signage typeface it is inspired by typefaces such as Ronnia, Meta, and Tahoma.
+ 
+ 
+    The typeface comes with a wide character set supporting Western European languages, Polish, and Czech.
+    The figures are designed as tabular.
+ 
+ 
+    In July 2023, a GRAD axis is added to solve the optical effects of negative text setting (dark color text on light background).
+ 
+ 
+    To contribute, see  github.com/googlefonts/Signika"
+yanonekaffeesatz,"""Yanone Kaffeesatz"" was first published in 2004 and is Yanone’s first ever finished typeface. Its
+    Bold is
+    reminiscent of 1920s coffee house typography, while the rather thin fonts bridge the gap to present times. Lacking
+    self confidence and knowledge about the type scene, Yanone decided to publish the family for free under a  Creative Commons License . A decision that
+    should turn out one of the best he ever made. It has been downloaded over 100,000 times to date, and you can witness
+    Kaffeesatz use on German fresh-water gyms, Dubai mall promos and New Zealand McDonalds ads. And of course on coffee
+    and foodstuff packaging and café design around the globe. 
+ In 2009 he reworked much of the typeface and it got published in FontShop’s  FontFont Library  under the new name  FF Kava . You can read more about it in an extensive article by
+    Yves Peters on  FontFeed . 
+ Updated in December 2013 with Cyrillic, designed by Sol Matas and Juan Pablo del Peral at  Huerta Tipográfica . 
+ To contribute, see  github.com/yanone/kaffeesatz ."
+patuaone,Patua One is a slab serif text type designed for use in small sizes. It has low contrast and strong serifs and is intended to generate visual impact. Its thick serifs are curved to provide it with a touch of smoothness and gesture.
+titilliumweb,"Titillium is born inside the Accademia di Belle Arti di Urbino as a
+didactic project Course Type design of the Master of Visual Design Campi
+Visivi. 
+ The aim of the project is the creation of a collective fonts released under
+OFL. Each academic year, a dozen students work on the project, developing it
+further and solving problems. Any type designer interested in the amendment or
+revision of Titillium is invited to co-operate with us, or develop their own
+variants of the typeface according to the terms specified in the Open Font
+license. We also ask all graphic designers who use Titillium in their projects
+to  email us some examples 
+of the typeface family in use, in order to prepare a case histories
+database. 
+ Three years after the birth of Titillium, the project is still evolving,
+and even we don’t know what it will become in the future. 
+ Special thanks go to: 
+Prof. Luciano Perondi, design and curation 
+Prof. Marcello Signorile, coordination 
+Prof. Manuel Zanettin, web project supervision  
+Diego Giusti, design of the first prototype"
+arvo,"Arvo is a geometric slab-serif typeface family suited for screen and print. 
+The family includes 4 cuts: Roman, Italic, Roman Bold, Bold Italic. 
+It is a libre font, first published in Google Fonts. 
+The flavour of the font is rather mixed. 
+It's monolinear-ish, but has a tiny bit of contrast (which increases the legibility a little in Mac OS X.)
+ 
+ 
+The name Arvo is a typical Estonian man's name, but is not widely used today. 
+In the Finnish language, Arvo means ""number, value, worth."" Considering how much programming is involved in hinting, all these meanings are true.
+ 
+ 
+In December 2013 Arvo 2.0.1 was released, with support for languages that use the Cyrillic script, the latin script is expanded to Adobe's  Glyph List 3, and many truetype hints are improved especially for in smaller sizes (regular cuts start now from 9ppem). 
+Also added PANOSE classification numbers, cleaned up character palette order, and many more smaller bug fixes were made.
+ 
+ 
+ Updated August 2015:  Bold and Bold Italic styles were updated to allow document embedding.
+ 
+ 
+Arvo – это брусковый шрифт из семейства геометрических шрифтов с прямоугольными засечками. 
+Данный шрифт создан для использования на экранах, а также в печатном виде (офсетная печать и т.д). 
+Шрифт состоит из четырёх начертании: обычный, курсив, жирный и жирный курсив.Arvo распространяется на основании лицензии OFL. 
+Благодаря которой любой пользователь может скачать/загрузить данное семейство шрифтов и пользоваться ими по своему усмотрению (смотри подробнее  scripts.sil.org/OFL ). 
+Для улучения читаемости на экранах, шрифт имеет детальное оптимирование Truetype (хинтинг), что в системах Windows и Linux предоставляет возможность набора мелкого шрифта, не теряя при этом качества читаемости.
+
+ 
+Краткая биография
+ 
+ 
+Антон Коовит родился в 1981 году, в городе Таллинне. 
+Изучал графический дизайн в Академии Художеств Эстонии, а также в ESAG городе Париже и в Амстердаме Академии Геррит Рейтвельда, Голландия. 
+ 
+После окончания изучения графического дизайна Антон Коовит направился на учёбу в Королевскую Академию Художеств Гааги (КАВК den Haag) для приобетения  градуса магистра по шрифтовому дизайну. 
+После окончания магистротурного обучения Антон Коовит основал фирму Кхорк ОО, которая действует по широкому профилю: оформление выстовок, логотипы, плакаты и шрифты. 
+С 2007 года он проживает в Берлине. 
+Кроме создания проектов в области типографии он преподаёт типографию, а также проводид консультативное обучение шрифтовому дизайну.
+ 
+ 
+Известные шрифты Антона Коовита: Adam, Aleksei, GQ Slab, U8, Arvo."
+hindmadurai,"Hind Madurai is a family of five Tamil fonts, which are part of the Indian Type Foundry’s larger Open Source Hind Multi-Script project. 
+In addition to Tamil, the Hind Madurai fonts also include Latin-script characters.
+ 
+ 
+Developed explicitly for use in User Interface design, Hind’s letterforms have a humanist-style construction, paired with seemingly monolinear strokes. 
+Most of these strokes have flat endings: they either terminate with a horizontal or a vertical shear, rather than on a diagonal. 
+This helps create clear-cut counter forms between the characters. 
+Additionally, Hind’s letterforms feature open apertures and counterforms. 
+The entire family feels very legible when used to set text.
+ 
+ 
+The Tamil and Latin script components are scaled in relation to each other so that the head of the Tamil characters falls just below the Latin capital-height. 
+Depending in the font weight, Tamil letters appear to be about 80–85% of the height of the Latin uppercase. 
+Text set in the Tamil script sits nicely alongside the Latin’s lowercase, too. 
+Although Hind Madurai is a “monolinear sans” face, much of its design features tends toward the traditional end of the design spectrum.
+Each font in the Hind Madurai family has 552 glyphs, which includes all of the characters needed to write Tamil. 
+The Latin character set is Adobe Latin 3, enabling typesetting for English and other Western European languages. 
+ 
+ 
+Hind Madurai is a solid alternate when choosing typefaces for UI design, and a wise selection for electronic display embedding. 
+Jyotish Sonowal designed Hind Madurai for ITF, who first published the fonts in 2015. 
+Hind Madurai is named after Madurai, a city in Tamil Nadu, India.
+ 
+ 
+The Hind Madurai project is led by Indian Type Foundry, a type design foundry based in Ahmedabad, India. 
+To contribute, see  github.com/itfoundry/hind-madurai"
+cormorant,"Cormorant is a free display type family developed by Christian Thalmann. The project currently comprises a total of 45 font files spanning 9 different visual styles (Roman, Italic, Infant, Infant Italic, Garamond, Garamond Italic, Upright Cursive, Small Caps, and Unicase) and 5 weights (Light, Regular, Medium, SemiBold, and Bold.) Cormorant was conceived, drawn, spaced, kerned, programmed, interpolated, and produced in its entirety by Christian Thalmann of Catharsis Fonts. For an illustrated presentation and description of the family, please visit its  Bēhance page . 
+ While this project was heavily inspired by Claude Garamont's immortal legacy, Christian did not use any specific font as a starting point or direct reference for the designs. Most glyphs were drawn from scratch; when he needed guidance on a specific character, he searched for the term Garamond and skimmed through the results for a general impression. 
+ He is grateful to the creative souls on the Typophile, TypeDrawers and Typografie forums, and Github, for a wealth of knowledge about type design, and for providing a large amount of excellent feedback on Cormorant during its development. He also thanks the tireless folks at Glyphs, in particular Rainer Erich Scheichelbauer of Schriftlabor and Georg Seifert. Special thanks go to Dave Crossland and Google Fonts for making the libre release of this font family possible through generous funding of the development process. 
+ The Cormorant project is led by Christian Thalmann, a type designer based in Zurich, Switzerland. To contribute, see  github.com/CatharsisFonts/Cormorant"
+teko,"Teko is an Open Source typeface that currently supports the Devanagari and Latin scripts. This font family has been created for use in headlines and other display-sized text on screen. Five font styles make up the initial release. 
+ Display families with extensive character sets are rare for any script. With Indian typefaces, however, large character sets are even less common. ITF’s designs are an exception. The Teko typeface features letterforms with low stroke contrast, square proportions and a structure that appears visually simple. 
+ The Regular, Medium and Semibold fonts are recommended for use in long headlines, while Bold is intended primarily for setting just one or two words. The Light is a beautiful variant that may be put to exceptionally good use in large headlines on websites. At display sizes, Teko works equally well on screen or in print. Each font contains 1090 glyphs, offering full support for the conjuncts and ligatures required by languages written with the Devanagari script. Teko is an excellent choice for use in advertising or for news tickers on television screens (breaking news, etc.) 
+ Manushi Parikh designed the Teko typeface for the Indian Type Foundry, who published it in 2014. 
+ In 2023, Marc Foley converted the family to a variable font. 
+ To contribute, see  github.com/googlefonts/teko ."
+archivo,"Archivo is a grotesque sans serif typeface family originally designed for highlights and headlines. This family is reminiscent of late nineteenth century American typefaces. The technical and aesthetic characteristics of the font are both crafted for high performance typography. It was designed to be used simultaneously in print and online platforms and supports over 200 world languages. 
+ Archivo has been upgraded to a variable font in 2021. The weight and width axes allow a wide variety of styles, from Thin to Black and from ExtraCondensed to Expanded. 
+ Archivo is designed by Héctor Gatti and Omnibus-Type Team. To contribute to the project visit  github.com/Omnibus-Type ."
+spacegrotesk,"Space Grotesk is a proportional sans-serif typeface variant based on Colophon Foundry's fixed-width Space Mono family (2016). Originally designed by Florian Karsten in 2018, Space Grotesk retains the monospace's idiosyncratic details while optimizing for improved readability at non-display sizes.
+ 
+ 
+ → floriankarsten.github.io/space-grotesk 
+ 
+ 
+Space Grotesk includes Latin Vietnamese, Pinyin, and all Western, Central, and South-Eastern European language support, as well as several OpenType features (old-style and tabular figures, superscript and subscript numerals, fractions, stylistic alternates).
+ 
+ 
+To contribute, see  github.com/floriankarsten/space-grotesk ."
+varta,"Varta is a sans serif family that fuses warm humanity with bright clarity and professional crispness whos congenial personality emerges at larger sizes. 
+ It is a variable font that has been designed to render well down to surprisingly small sizes and on both low and high-quality screens, which provides a broad range of utility. 
+ Its features make it well suited to a variety of tasks, including sign systems, editorial design, packaging, and extended reading on screens. 
+ To contribute, see  https://github.com/SorkinType/Varta 
+ Varta is published by  Sorkin Type ."
+sora,"Sora, meaning sky in Japanese, is a typeface family commissioned for the  Sora  decentralized autonomous economy focused on empowering projects that benefit society. Soramitsu, the developer of Sora, is a Japanese technology company specializing in blockchain development and well-known for creating the first central bank digital currency. 
+ Sora typeface was designed to capture Soramitsu's spirit and heritage resulting in a type family with cues of low-resolution aesthetics and early screen typography but without nostalgia, as every decision was considered towards the crisp digital environment of today. The particularly big x-height combined with evidently generous counters turns the family into a convenient tool for app and web interfaces, where clarity and effectiveness at any size is an imperative. 
+ To contribute, see  github.com/sora-xor/sora-font"
+ibmplexsans,"IBM Plex® is the corporate typeface for IBM worldwide and an open-source project developed by the IBM Brand &
+    Experience team (BX&D). Plex is an international typeface family designed to capture IBM’s brand spirit
+    and history and to illustrate the unique relationship between mankind and machine—a principal theme for IBM since
+    the turn of the century. The result is a neutral yet friendly Grotesque style typeface that balances design with the
+    engineered details that make Plex distinctly IBM.  The
+    family  includes a Sans, Sans Condensed, Mono, and Serif and has excellent legibility in print, web, and mobile
+    interfaces.
+ 
+ 
+    Plex’s three designs work well independently and even better together. Use the Sans as a
+    contemporary compadre, the Serif for editorial storytelling, or the Mono to show code snippets. The unexpectedly
+    expressive nature of the italics gives you even more options for your designs. Currently, IBM Plex Sans supports
+    Extended Latin, Arabic, Cyrillic, Devanagari, Greek, Hebrew, Japanese, Korean and Thai."
+ibmplexserif,"IBM Plex® is the corporate typeface for IBM worldwide and an open-source project developed by the IBM Brand &
+    Experience team (BX&D). Plex is an international typeface family designed to capture IBM’s brand spirit
+    and history and to illustrate the unique relationship between mankind and machine—a principal theme for IBM since
+    the turn of the century. The result is a neutral yet friendly Grotesque style typeface that balances design with the
+    engineered details that make Plex distinctly IBM.  The
+    family  includes a Sans, Sans Condensed, Mono, and Serif and has excellent legibility in print, web, and mobile
+    interfaces.
+ 
+ 
+    Plex’s three designs work well independently and even better together. Use the Sans as a
+    contemporary compadre, the Serif for editorial storytelling, or the Mono to show code snippets. The unexpectedly
+    expressive nature of the italics gives you even more options for your designs. Currently, IBM Plex Sans supports
+    Extended Latin, Arabic, Cyrillic, Devanagari, Greek, Hebrew, Japanese, Korean and Thai."
+adamina,"Adamina is a typeface designed for text setting in small sizes. 
+For this purpose the x-height is increased and contrast lowered. 
+Proportions are transitional and compact. 
+Refined design features like one-sided flaring and asymmetrical serifs are there to provide a pleasant reading experience.
+ 
+ 
+Designed by Alexei Vanyashin for Cyreal.
+ 
+ 
+To contribute to the project, visit  github.com/cyrealtype/Adamina 
+ 
+ 
+ Updated:  January 2016 to Version 1.012, to correct GPOS table (enabling kerning.)"
+barlow,"Barlow is a slightly rounded, low-contrast, grotesk type family.
+Drawing from the visual style of the California public, Barlow shares qualities with the state's car plates, highway signs, busses, and trains.
+ 
+ 
+This is the Normal family, which is part of the superfamily along with
+ Semi Condensed  and
+ Condensed ,
+each with 9 weights in Roman and Italic.
+ 
+ 
+ 
+The Barlow project is led by Jeremy Tribby, a designer based in San Francisco, USA.
+To contribute, see  github.com/jpt/barlow"
+bitter,"People read and interact with text on screens more and more each day.
+ What happens on screen ends up being more important than what comes out of the printer.
+ With the accelerating popularity of electronic books, type designers are working hard to seek out the ideal designs for reading on screen.
+ 
+ 
+ Motivated by her love for the pixel, Sol Matas designed Bitter.
+ A ""contemporary"" slab serif typeface for text, it is specially designed for comfortably reading on any computer or device.
+ The robust design started from the austerity of the pixel grid, based on rational rather than emotional principles.
+ It combines the large x-heights and legibility of the humanistic tradition with subtle characteristics in the characters that inject a certain rhythm to flowing texts.
+ 
+ 
+ Bitter has little variation in stroke weight and the Regular style is thicker than a usual ‘Regular’ style for print design.
+ This generates an intense color in paragraphs, accentuated by the serifs that are as thick as strokes with square terminals.
+ 
+ 
+ Each glyph is carefully designed with an excellent curve quality added to the first stage of the design, that was entirely made in a pixel grid.
+ The typeface is balanced and manually spaced to use very few kerning pairs.
+ 
+ 
+ To contribute, see
+  
+  github.com/solmatas/BitterPro
+  
+ ."
+domine,"From the very first steps in the design process, Domine was designed, tested and optimized for body text on the web.
+Harmless to the eyes when reading long texts, Domine is a perfect choice for newspapers or magazines websites, where text is the main focus.
+It shines at px sizes 14 and 16, and can even be used as small as 11 px.
+ 
+ 
+Friendly in appearance, it combines the classic elements of familiar typefaces that have been in use from more than 100 years like
+ Clarendon , 
+ Century , 
+ Cheltenham  and 
+ Clearface .
+ 
+ 
+ 
+The rounded letters (b, c, d, e, o, p, q) are a bit squarish on the inside.
+This feature opens up the counters for better rendering and also make it look a bit more up-to-date than the classic typefaces previously referenced.
+ 
+ 
+The serifs are a bit shorter than usual.
+Another feature that improves the rendering by allowing more ""air"" between each letter pair.
+ 
+ 
+The joins of the stems to the branches in letters like h, m, n are deep enough to prevent dark spots, also improving legibility at small sizes.
+ 
+ 
+The friendly lowercase 'a', with the curve starting from the bottom of the stem, is reminiscent of Cheltenham and Clearface.
+That soft curve is also echoed in the curves of the f, j, n, m and r.
+ 
+ 
+The spacing is also optimized for body text on the web, clearly more open than that of typefaces made for print or for headlines.
+ 
+ 
+ To contribute, see  github.com/googlefonts/Dominee ."
+grandstander,"Grandstander  is a display variable font with a weight axis. 9 weights, upright and italic. It supports a wide range of languages in the latin script scope.
+ 
+ 
+The Grandstander project is led by Tyler Finck — type designer running  Etcetera Type Co  in Ithaca, New-York, USA.
+To contribute, see  github.com/Etcetera-Type-Co/Grandstander"
+heebo,"Heebo is a Hebrew and Latin typeface family, which extends Christian Roberton's Roboto Latin to Hebrew. The Hebrew was drawn by Oded Ezer and the font files were mastered by Meir Sadan. 
+ Since the Hebrew design of this family is primary, the vertical metrics are different to the original Roboto family. This family is auto-hinted, whereas Roboto is hand-hinted, so the rendering quality of Roboto may be better on older Windows machines. 
+ In May 2020, the family has been updated to a variable font family. 
+ The November 2023 update fixed some Hebrew bugs and improve the langage support. 
+ The Heebo project is led by Oded Ezer, a type designer based in Tel Aviv, Israel. To contribute, see  github.com/OdedEzer/heebo"
+karla,"Karla is a grotesque sans serif family which has been expanded now to a variable font with a weight axis ranging from ExtraLight to ExtraBold plus full support of Western, Central, and South-Eastern European languages.
+ 
+ 
+To contribute, see  github.com/googlefonts/karla ."
+literata,"Now in its third version, Literata is a distinct variable font family for digital text. Originally created as the brand typeface for Google Play Books, it exceeds the strict needs of a comfortable reading experience on any device, screen resolution, or font size. The family has matured into a full-fledged digital publishing toolbox — headline, paragraph, and caption text. Type Together redesigned it from the ground up as a variable font. Its tiny file size and infinite adjustability make it perfect for developers, mobile apps, and every screen imaginable. It’s the “every-device font”. Get the entire type family for FREE!
+ 
+ 
+   Literata was designed by TypeTogether: Veronika Burian & José Scaglione (Latin), Irene Vlachou (Greek), Vera Evstafieva (Cyrillic) and Elena Novoselova (Cyrillic).
+ 
+     
+    The family won the GOLD Indigo Awards in 2021 and is the Modern Cyrillic 2021 winner. Two versions of the family exist, one for print and the other for Ebooks. This is the print version of the family.
+ 
+ 
+To contribute, see  github.com/googlefonts/literata"
+lora,"Lora is a well-balanced contemporary serif with roots in calligraphy. It is a text typeface with moderate contrast well suited for body text. 
+ A paragraph set in Lora will make a memorable appearance because of its brushed curves in contrast with driving serifs. The overall typographic voice of Lora perfectly conveys the mood of a modern-day story, or an art essay. 
+ Technically Lora is optimised for screen appearance, and works equally well in print. 
+ In March 2019, the family has been updated to a variable font family. 
+ To contribute, see  github.com/cyrealtype/Lora-Cyrillic ."
+mate,"Simple in its structure; sharp and generous counter-shapes which create a medium texture that calls for good page color, in addition to offering a more relaxed reading experience for each line of text: Mate.   The italics that accompany the regular style show their quality in the shading of strokes, in the counters and the unusual shapes for this style as well as the calligraphic reminiscences that give this style a different and pleasant visual rhythm.   The Small Caps (SC) style, featuring traditional proportions, completes this initial release with its medium height numbers in all styles.   The primary use for the family is in text, yet due to the constructive details of letterforms, this family can be used in larger sizes for display typography. 
+ The February 2023 update features a bigger glyphset, fractions and some minor aesthetic modifications. 
+ To contribute, see  github.com/etunni/mate ."
+neuton,"Neuton is a clean, dark, somewhat Dutch-inspired serif font which reminds you a little of Times. It has a large height, short extenders, and a compact width for better screen use, and economy of space.   The family will comprise a regular, italic, and cursive, each in five weights and with smallcaps. Two italics — one will be called ""italic"", and the other ""cursive"" — are uncommon, but very useful. Ever tried emphasizing something already emphasized? Beyond that obvious example, there are other uses.   Sometimes a text needs a different flavor or feel. While one roman can work for a variety of texts, the companion italics don't always. In more classical or personal documents, a stiff, sober, modern and down-to-earth italic will never work. And in many essays, some of the fancier italics look ridiculous. Who said a roman needs only one companion?"
+notoserif,"Noto is a global font collection for writing in all modern and ancient
+  languages. Noto Serif is a modulated (“serif”) design for texts in the
+   Latin, Cyrillic  and  Greek  scripts, also suitable as the
+  complementary font for other script-specific Noto Serif fonts. It has italic
+  styles, multiple weights and widths, and 3,256 glyphs."
+padauk,"Padauk is a fully capable Unicode 6 font supporting all the Myanmar characters in the standard.
+Thus it provides support for minority languages as well, in both local and Burmese rendering styles.
+ 
+ 
+Downloads of Padauk include the necessary Graphite smarts to render the Myanmar script correctly.
+Thus if you want to use this font at full fidelity to the orthography, you will need to use Graphite-capable applications, such as the latest versions of LibreOffice.
+However the web font files served by Google Fonts do not include Graphite tables. 
+Fortunately, Padauk also has OpenType tables which allow it to be rendered in a basic way, in applications that support OpenType shaping such as Word. 
+The web font files served by Google Fonts include the OpenType tables, so the font will work in most web browsers. 
+ 
+ The last upgrade in July 2022, offers an major language support update. 
+ 
+The Padauk project is maintained at  https://github.com/silnrsi/font-padauk ."
+vollkorn,"Vollkorn came into being as the first typeface design by Friedrich Althausen.
+First published in 2005 under a Creative Commons license, it was soon downloaded thousands of times and used in all kinds of web and print projects.
+ 
+ 
+It intends to be a quiet, modest and high quality text face for bread and butter use.
+Unlike many text typefaces from the Renaissance period until now, it has dark and meaty serifs and a bouncing and healthy look.
+It might be used in body copy, or just as well for headlines and titles.
+»Vollkorn« (pronounced »Follkorn«) is German for »wholemeal« which refers to the old term »Brotschrift«.
+It stood for the small fonts for every day use in hand setting times.
+ 
+ 
+In May 2020, it was updated to be a Variable Font with a ""Weight"" axis in both Roman and Italic.
+ 
+ 
+The Vollkorn project is led by Friedrich Althausen, a typeface designer in Germany.
+To contribute, see  github.com/FAlthausen/Vollkorn-Typeface"
+zillaslab,"Zilla Slab is Mozilla's core typeface, used for the Mozilla wordmark, headlines and throughout their designs. 
+A contemporary slab serif, based on Typotheque's Tesla, it is constructed with smooth curves and true italics, which gives text an unexpectedly sophisticated industrial look and a friendly approachability in all weights.
+ 
+ 
+Designed  by Typotheque , this project is led by Mozilla. 
+To contribute, see  github.com/mozilla/zilla-slab"
+trirong,"Trirong means “tricolor flag” in Thai, and represents the flag of Thailand.
+A serif Latin and looped Thai typeface, it is characterized by thick and thin strokes, and its narrow and tall structure echoes that of traditional Thai typefaces. 
+It saves space while preserving readability and legibility with its oval-shape looped terminal. 
+This looped Thai and Transitional serif Latin works well in formal contexts. 
+ 
+ 
+The similarity between some glyphs such as ก ถ ภ ฤ ฦ, and ฎ and ฏ is something to take into consideration because it might lead to confusion when typesetting very short texts. 
+Trirong takes a specific approach in how it deals with the thick and thin strokes in Thai glyphs. 
+Other type designers of Thai fonts may like to use this approach as a reference.
+Formal looped Thai typefaces have delicate details, so it is important for type designers to take care when extending them into heavy weights and avoid obscuring important details. 
+The sizes and positions of vowels and tone marks need to be managed carefully too, because they are all relevant to readability, legibility, and overall texture.
+ 
+ 
+The Trirong project is led by Cadson Demak, a type foundry in Thailand. 
+To contribute, see  github.com/cadsondemak/trirong"
+prata,"Prata is an elegant Didone typeface with sharp features and organic teardrops. There is a certain tension in the contrast of its virile serifs and soft refined curves. Its triangular serifs complement and accent the thin strokes, and the high contrast means it will work best in display sizes.   Designed by Ivan Petrov for Cyreal."
+chilanka,"Chilanka is Malayalam handwriting style font designed by Santhosh Thottingal. It follows the common style one can see in everyday handwriting of Malayalam. It has a comprehensive Malayalam glyph set that contains most of the unique Malayalam conjuncts. 
+ To contribute, see  gitlab.com/smc/fonts/chilanka ."
+athiti,"Athiti is a Thai word for the Sun, and it is an informal sans Latin and loopless Thai typeface. 
+The friendly personality is based on humanist calligraphy, and has an organic look and feel while preserving the traditional construction of Roman type. 
+It all started with a desire to learn more about the origin of strokes in human handwriting. 
+It is designed to reflect a trace of writing tools and convey its inspiration. 
+The family consists of 6 weights that can be used in headlines or body text.
+ 
+ 
+The outer curves contrast with the angled inner counter shapes, which distributes feelings of strength and softness at the same time. 
+Athiti can be used with a mixture of formal and informal content, for example in educational work.
+ 
+ 
+A similarity between some glyphs such as ก ถ ภ ฤ ฦ, ฎ ฏ, บ ป, or ข ช is something to take into consideration because it might lead to confusion when typesetting very short texts. 
+A specific approach has been taken for dealing with thick and thin strokes in the Thai design. 
+Other type designers may consider this font as an example when developing new fonts. 
+ 
+ 
+Informal loopless Thai typefaces have slightly simplified details, as compared to the formal looped style, and this allows type designers to extend loopless families to very black weights.
+Sizes and positions of vowels and tone marks need to be managed carefully because they are all relevant to readability, legibility, and overall texture.
+Also, in this case, ink trapping is required when connecting two specific strokes of each glyph, and it has to be done carefully, as it has been in Athiti.
+ 
+ 
+The Athiti project is led by Cadson Demak, a type foundry in Thailand. 
+To contribute, see  github.com/cadsondemak/athiti"
+mukta,"Mukta is a Unicode compliant, versatile, contemporary, humanist, mono-linear typeface family available in seven weights, supporting Devanagari, Gujarati, Gurumukhi, Tamil and Latin scripts.
+This type family is a libre licensed version of Ek's self-titled multi-script project, an ongoing effort to develop a unified type family for each Indian script.
+The goal is to build one harmonious family across all Indian scripts without letting the visual features of one script dominate over others.
+This ensures that the fonts can be used successfully for both single and multi-script purposes.
+ 
+ 
+Mukta was designed by Girish Dalvi and Yashodeep Gholap.
+ Mukta Vaani  was designed by Noopur Datye and Pallavi Karambelkar with support from Sarang Kulkarni and Maithili Shingre.
+ Mukta Malar  was designed by Aadarsh Rajan.
+ Mukta Mahee  was designed by Shuchita Grover and Noopur Datye.
+ 
+ 
+Ek would like to thank Vinay Saynekar, Santosh Kshirsagar, Shubhanand Jog, Yogesh Jahargirdar, Pradnya Naik, Snehal Patil, Omkar Shende and Dave Crossland for their suggestions and feedback during the font design process.
+Ek would also like to thank faculty and friends from the Industrial Design Centre, IIT Bombay, and from Sir J J Institute of Applied Art, for their support and encouragement.
+ 
+ 
+This project is led by Ek Type, a collective of type designers based in Mumbai focused on designing contemporary Indian typefaces.
+To contribute, see  github.com/EkType/Mukta"
+sarabun,"Sarabun is an open source multi-script webfont that supports both Latin and Thai. It is the ""TH Sarabun New"" font, made available under the Open Font License. The name ""Sarabun"" (สารบรรณ, RTGS: Saraban) means documentary affairs. The font is used in the Government Gazette of Thailand newspaper, and you can read more details about this font project on Wikipedia's  National Fonts  page."
+kadwa,"Kadwa is a Devanagari typeface family designed by Sol Matas. 
+It is based on the original Latin typeface  Bitter , a slab serif typeface for text.
+ 
+ 
+People read and interact with text on screens more and more each day. 
+What happens on screen ends up being more important than what comes out of the printer. 
+With the accelerating popularity of electronic books, type designers are working hard to seek out the ideal designs for reading on screen.
+ 
+ 
+Motivated by Sol's love for the pixel she designed Bitter, and later Kadwa.
+A ""contemporary"" slab serif typeface for text, it is specially designed for comfortably reading on any computer or device. 
+The robust design started from the austerity of the pixel grid, based on rational rather than emotional principles. 
+It combines the large x-heights and legibility of the humanistic tradition with subtle characteristics in the characters that inject a certain rhythm to flowing texts.
+ 
+ 
+It has little variation in stroke weight and the Regular is darker than a typical typeface intended for use in print.
+This generates an intense color in paragraphs, accentuated by the serifs that are as thick as strokes, with square terminals.
+ 
+ 
+Each glyph is carefully designed with an excellent curve quality added to the first stage of the design, that was entirely made in a pixel grid. 
+The typeface is balanced and manually spaced to use very few kerning pairs, especially important for web font use since most browsers do not currently support this feature.
+ 
+ 
+The Kadwa project is led by Sol Matas, a type designer based in Berlin, Germany. 
+To contribute, see  github.com/solmatas/Kadwa"
+sura,"Sura is a Devanagari typeface family designed by Carolina Giovagnoli. 
+It is based on the original Latin typeface  Andada , a serif typeface for text.
+ 
+ 
+Andada is a text font with an organic-slab serif, hybrid style, a solid design of medium stroke contrast. 
+This font has received an award at the 2010 Ibero-America Design Biennial. 
+The Biennial was shown in Spain, Argentina, Chile, El Salvador, Uruguay, Bolivia, Colombia and Venezuela.
+ 
+ 
+The Sura project is led by Carolina Giovagnoli, a type designer based in Argentina. 
+To contribute, see  github.com/CaroGiovagnoli/sura"
+ibarrarealnova,"In 2007, The Calcografía Nacional Española organized a project directed by José María Ribagorda with the objective of divulging the invaluable typographic heritage produced in Spain in the 18th century through the ""Imprenta Real"". 
+ This project included the recovery of the types designed by Geronimo Gil for the edition of the most beautiful ""Quixote"" never edited, printed by Joaquín Ibarra for the “Real Academia de la Lengua” in 1780. This font was called “Ibarra Real”. 
+ José María Ribagorda decided in 2015 that Octavio Pardo would be the first collaborator to play the design. Octavio was the first student of the University of Reading MA Typeface Design program to study this project. 
+ The Ornaments made by celebrated Latin American and Spanish designers would not be included until their authors allow them to be distributed under the SIL Open Source License. 
+ To contribute, see  Ibarra Real GitHub"
+faustina,"Faustina is part of the Omnibus-Type Press Series, designed by Alfonso Garcia for editorial typography (books, newspapers and magazines) in print and online. In September 2019, the family has been converted into a variable font family.
+ 
+ 
+To contribute to the project, visit  github.com/Omnibus-Type"
+librefranklin,"Libre Franklin is an interpretation and expansion of the 1912 Morris Fuller Benton classic. 
+ 
+ 
+The Libre Franklin project is led by Impallari Type, a type design foundry based in Rosario, Argentina. 
+To contribute, see  github.com/googlefonts/Libre-Franklin"
+khand,"Khand is a family of compact mono-linear fonts with very open counter forms. Developed for display typography, the family is primarily intended for headline usage. 
+Its letterforms are dynamic, and everything is designed according to a modular system. 
+All of its shapes bear a strong commonality to one another, but the typeface strikes a good balancing act and avoids too much repetitiveness. 
+The lighter styles are suitable for short paragraphs of running text, while the heavier styles have been optimized for headlines or single word settings.
+ 
+ 
+The base character height in the Khand fonts is ‘big on the body.’ 
+Across a line of text, the consonantal forms take up the majority of vertical space. 
+Vowel marks above and below have been shortened – keeping these to a minimum allows for lines of text to be set more closely together vertically. 
+The reduction of interlinear space is paramount for successful headline typesetting, and Khand performs much better in display applications than similar fonts with more elongated vowel marks. 
+Because of their reduced height, the typeface’s vowel mark forms have been simplified somewhat out of necessity, but this stylistic reduction is in-keeping with the modular feeling of the typeface’s overall design. 
+Dot-shaped marks appear rounded in order to help maintain their differentiation from other marks.
+ 
+ 
+Khand’s Devanagari component was designed by Sanchit Sawaria and Jyotish Sonowal. 
+The Latin component was designed by Satya Rajpurohit. 
+To contribute, see  github.com/itfoundry/khand"
+thasadith,Thasadith is a Thai and Latin family. It's a humanist sans serif with rounded corners. It was originally developed as part of the  Srisakdi  family.
+yrsa,"Intended for continuous reading on the web (longer articles in online news, magazines, blogs), Yrsa supports over 92
+languages. A special consideration was given to Central and East European languages and proper shaping of their
+accents.
+A version that also supports 2 languages in the Gujarati script (Gujarati and Kachchi), is available as  Rasa . In terms of glyphs included Rasa is a superset of
+Yrsa and includes the complete Latin, but in Rasa the Latin may be adjusted to support the primary Gujarati font.
+ 
+ 
+It is a deliberate experiment in remixing existing typefaces: 
+The Latin part began with Eben Sorkin's  Merriweather .
+The Gujarati began with David Březina’s  Skolar Gujarati .
+ 
+ 
+To contribute, see  github.com/rosettatype/yrsa ."
+nunito,"Nunito is a well balanced sans serif typeface superfamily, with 2 versions:
+    The project began with Nunito, created by Vernon Adams as a rounded terminal sans serif for display typography.
+    Jacques Le Bailly extended it to a full set of weights, and an accompanying regular non-rounded terminal version,  Nunito Sans .
+ 
+ 
+    To contribute, see  github.com/googlefonts/nunito ."
+rubik,"Rubik is a sans serif font family with slightly rounded corners designed by Philipp Hubert and Sebastian Fischer at  Hubert & Fischer  as part of the  Chrome Cube Lab  project.
+ 
+ 
+Rubik is a 5 weight family with Roman and Italic styles, that accompanies  Rubik Mono One , a monospaced variation of the Black roman design.
+ 
+ 
+Meir Sadan redesigned the Hebrew component in 2015.
+Alexei Vanyashin redesigned the Cyrillic component in 2016.
+ 
+ 
+To contribute, see  github.com/googlefonts/Rubik ."
+simonetta,"The Simonetta font is named in honour of Simonetta Vespucci. She was considered to be the most beautiful woman in Renaissance Florence and was nicknamed 'La Bella Simonetta.' She was a model for Sandro Botticelli's painting 'The Birth of Venus' and many of his other female characters.   The Simonetta font is inspired by Italian Humanistic typefaces, but it is contemporary and has many original features. It has one-sided serifs and soft drops, is slightly slanted (some two degrees) and the Italics have the same slant. The Romans and Italics differ from each other only in their shapes, with the italics being much more calligraphic and angular.   Designed by Gayaneh Bagdasaryan for Brownfox. To contribute to the project contact  Gayaneh Bagdasaryan ."
+gloock,"Gloock is a contemporary high-contrast serif typeface intended for display use. It draws inspiration from newspaper's headlines but with a contemporary approach. Its main focus is the smooth relationship between the thin and thick strokes. It's a perfect typeface for headlines and has a great performance anywhere in big sizes. 
+ To contribute, see  github.com/duartp/gloock ."
+inter,"Inter is a variable font family carefully crafted & designed for computer screens.
+ 
+ 
+ Inter features a tall x-height to aid in readability of mixed-case and lower-case text.
+ Several OpenType features are provided as well, like contextual alternates that adjusts punctuation depending on the shape of surrounding glyphs, slashed zero for when you need to disambiguate ""0"" from ""o"", tabular numbers, etc.
+ 
+ 
+ The Inter project is led by Rasmus Andersson, a Swedish maker–of–software living in San Francisco.
+ To contribute, see
+  
+  github.com/rsms/inter"
+orbitron,"Orbitron is a geometric sans-serif typeface intended for display purposes. It features four weights (light, medium, bold, and black), stylistic alternatives, small caps, and a ton of alternate glyphs. Orbitron was designed so that graphic designers in the future will have some alternative to typefaces like Eurostile or Bank Gothic. If you’ve ever seen a futuristic sci-fi movie, you may have noticed that all other fonts have been lost or destroyed in the apocalypse that led humans to flee earth. Only those very few geometric typefaces have survived to be used on spaceship exteriors, spacestation signage, monopolistic corporate branding, uniforms featuring aerodynamic shoulder pads, etc. Of course Orbitron could also be used on the posters for the movies portraying this inevitable future. It was initially published on the  League of Movable Type . 
+ Orbitron was remastered as a variable font in 2019. To contribute updates or file issues, see  https://github.com/theleagueof/orbitron ."
+mulish,"Mulish is a minimalist Sans Serif typeface, designed for both display and text typography.
+ 
+ 
+It was initially drawn in 2011 by Vernon Adams and then refined until 2014, adding more weights, support for more Latin languages, tightened the spacing and kerning and made many glyph refinements throughout the family – all based on hundreds of users' feedback.
+In 2017 the family was updated by Jacques Le Bailly to complete the work started by Vernon after he passed away, in collaboration with his wife Allison, an arist who holds the trademark on the typeface family name.
+In August 2019, it was updated with a Variable Font ""Weight"" axis.
+ 
+ 
+To contribute, see  github.com/googlefonts/mulish"
+limelight,"Limelight is a sensitive rendition of the classic high contrast art deco
+style geometric sans serif. This style is often used to suggest the 1920's
+time period as well as the theatre generally and hollywood filmmaking in
+particular. Because of the extreme contrast of the design it will perform most
+reliably on web pages at medium and large font sizes."
+play,"Play is a minimalistic sans serif typeface designed by Jonas Hecksher during his time as Type Director of  Playtype Type Foundry . 
+All letters in Play derive from the 'O' – square and circular at the same time. 
+Play is designed with large, open counters, ample lowercase x-heights and a corporate, yet friendly appearance. 
+The combination of these qualities give Play both a high legibility and readability."
+mada,"Mada is a modernist, unmodulted Arabic typeface inspired by road signage seen around Cairo, Egypt, by Khaled Hosny. 
+The Arabic component is characterized by low descenders, open contours, and low contrast forms, making it suitable for signage, small point sizes, and user interfaces. 
+However Mada can work also as a display typeface, with a modernist and simplistic feeling.
+The Latin component is a slightly modified version of Source Sans Pro, led by Paul Hunt at Adobe Type. 
+ 
+ 
+To contribute, see  github.com/aliftype/mada"
+ralewaydots,"A dotted version of  Raleway , for posters and big headlines.
+ 
+ 
+It is a display face and the downloadable font features both old-style and lining numerals, standard and discretionary ligatures, as well as stylistic alternates that are inspired by more geometric sans-serif typefaces than the default which is neo-grotesque.
+ 
+ 
+To contribute to the project, visit  github.com/impallari/Raleway"
+amiko,"Amiko is a clean and utilitarian Devanagari and Latin typeface family, specifically designed for maximum legibility at the smallest possible text sizes.
+It is intended for body text on the web and low resolution screens. 
+It was designed in a studio collaboration by Pablo Impallari, Rodrigo Fuenzalida and Andres Torresi.
+ 
+ 
+Thank you to Pria Ravichandran, Erin McLaughlin, Girish Dalvi, Dan Reynolds and all those who have shared their knowledge and helped with reviews to improve Amiko.
+ 
+ 
+The Amiko project is led by Impallari Type, a type design foundry based in Rosario, Argentina. 
+To contribute, see  github.com/impallari/Amiko-Devanagari"
+fugazone,"Fugaz One is a sans serif with very geometric features and gestural characteristics, which brings it away from its formal beginnings. Combined with its italic inclination, Fugaz One has become a very dynamic font."
+francoisone,"Francois One is a reworking of traditional sans serif gothic display typeface forms. In Francois One, the earlier letter forms have been digitised and then reshaped for use as a webfont, the counters have been opened up a little and the stems optimised for use as bold display font in modern web browsers. Slanted stem terminals have been added to give the face added visual play."
+markazitext,"This typeface design was inspired by Tim Holloway's Markazi typeface, with his encouragement, and initiated by Gerry Leonidas as a joint University of Reading and Google project.
+ 
+ 
+The Arabic glyphs were designed by Borna Izadpanah and design directed by Fiona Ross, they feature a moderate contrast. It takes its cues from the award-winning Markazi typeface, affording a contemporary and highly readable typeface.
+ 
+ 
+The complementary Latin glyphs were designed by Florian Runge. It keeps in spirit with its Arabic counterpart, echoing key design characteristics while being rooted in established Latin traditions. It is an open and clear design with a compact stance and an evenly flowing rhythm.
+ 
+ 
+The family is available in four weights with extended language support suited for print and screen.
+ 
+ 
+To contribute, see  github.com/BornaIz/markazitext ."
+changa,"Changa is intended for text usage, with its short ascenders and descenders
+and a set of lowercase letters inscribed within a square. The uppercase
+letters gains slightly more in height form a single height so that
+typographers can set text with minimum line spacing. 
+ Changa One 
+is also available, the initial style that is an extra-bold sister family 
+intended for display usage. 
+ In November 2019, it was updated with a Variable Font ""Weight"" axis. 
+ To contribute, see  github.com/googlefonts/changa-vf ."
+rufina,"Rufina combines features of several typographic styles with Bodoni forms
+found in the calligraphy of flexible tip pens. High contrast enables it to
+work well in text and headlines. 
+ To contribute to the project contact 
+ Martin Sommaruga ."
+oxanium,"Oxanium is a square, futuristic font family. It feels at home on the head-up display of a spaceship, or the scoreboard of a video game. Its intuitive strokes ensure legibility at small sizes and quick glances, while angled cuts add charisma to big headlines. 
+ To contribute, please go to  github.com/sevmeyer/oxanium ."
+nanumgothic,"The Nanum fonts (Korean : 나눔글꼴) are unicode fonts designed especially for
+the Korean-language script, designed by Sandoll Communications
+(Korean : 산돌 커뮤니케이션) and Fontrix (Korean : 폰트릭스). The publisher is
+Naver. Nanum Gothic is a contemporary sans-serif with a warm touch and is
+expertly hinted for screen use."
+tajawal,"Tajawal is a distinctive low contrast Arabic and sans serif Latin typeface family in 7 weights was created and designed by Boutros™ following a modern geometric style while still respecting the calligraphy rules of the Arabic script.
+Its fluid geometry makes it the perfect choice to use in both print and web applications, and alongside other Latin typefaces.
+ 
+ 
+To contribute, see  github.com/googlefonts/tajawal"
+majormonodisplay,"Majör Mono Display is a monospaced geometric sans serif all-uppercase typeface which also has a complete set of constructivist display characters with a playful attitude.
+It has many OpenType features, but the basic stylistic sets, serious sans serif, and playful display designs, are encoded as lowercase and uppercase characters.
+This makes it a great choice for playful web typography, especially at large point-sizes.
+ 
+ 
+To contribute, see  github.com/googlefonts/majormono"
+exo2,"Exo 2 is a complete redrawing of  Exo , a contemporary geometric sans serif typeface that tries to convey a technological/futuristic feeling while keeping an elegant design. Exo is a very versatile font, so it has 9 weights (the maximum on the web) and each with a true italic version. Exo 2 has a more organic look that will perform much better at small text sizes and in long texts. 
+ In March 2020, the family has been updated to a variable font family. 
+ To contribute, see  github.com/googlefonts/Exo-2.0 ."
+coda,"Eye-catching, no-messing, bandwidth-saving, Coda's Heavy (800) style is designed to be an unassuming, practical, impact heavy display font for the world wide web.   Designed to be used in large sizes to bring bold information to web pages, it is complemented by a Regular weight for use in text and display contexts.   These webfonts are designed to be used freely across the internet by web browsers on desktop computers, laptops and mobile devices."
+bagelfatone,"Bagel Fat is a very heavy/fat font with rounded details. By these rounded corners, the overall mood is cute and lovely which is inspired by bread, pastries and sweets. Also a large contrast at where the horizontal and the vertical stroke come across makes it unique, not just cute.
+ 
+ 
+    To contribute, please visit  github.com/JAMO-TYPEFACE/BagelFat ."
+sarina,"Foundry:  Sorkin Type Co 
+ Sarina is a display typeface with brush style letterforms. Sarina's medium contrast and wide setting offers a casual breezy feeling. Sarina is appropriate for medium to larger sizes. 
+ Source files are available from  Google Code .
+To contribute to the project contact  Eben Sorkin ."
+chango,"Chango is a display face based on letters drawn by Mexican illustrator Ernesto “Chango” García Cabral. It’s big and heavy, ideal for head-line body sizes with a humorous touch."
+creepster,"Creepster is a fright-filled font, perfect for all of your grisly graphic needs!"
+notable,"Notable is an uppercase sans serif display font; it’s letterforms are based on those found on U.S. currency.
+ 
+ 
+Notable was designed by  Eli Block ,  Hana Tanimura , and  Noemie Le Coz  for  Notable Women , an initiative by former Treasurer of the United States, Rosie Rios.
+ 
+ 
+ Notable Women  is an augmented reality experiment that lets anyone see 100 historic American women where they’ve historically been left out: U.S. currency."
+monoton,"Monoton is a contemporary take on metalpress fonts like, for example, 'Prisma' (originally designed in 1931 by Rudolf Koch.) Monoton is a pure display webfont designed to be used at font sizes above 30 points. Monoton has been designed to be used freely across the internet by web browsers on desktop computers, laptops and mobile devices."
+zentokyozoo,"Zen Loop Family is one of three Latin fonts designed by Yoshimichi Ohira, as part of the Zen Fonts collection.
+ 
+ 
+Tokyo Zoo was originally designed for an animal exhibition. 
+The stripes suggest zoo cages but overall it’s a fun and stylish design.
+ 
+ 
+To contribute, see  github.com/googlefonts/zen-tokyo-zoo ."
+ribeye,"Ribeye  and  Ribeye Marrow  are reminiscent of a cartoon tattoo style of lettering, but exhibit a playfulness that breaks traditional weight distribution across its letterforms.   An edgy attitude, friendly syncopation, and highly legible letterforms makes these fonts a real pair of charmers."
+rye,"Foundry:  Sorkin Type Co 
+ Rye's bold attention getting shapes are useful for advertising. Rye is a medium contrast design inspired by posters using wood type. It gives off a feeling of the American West. It is suitable for use in medium to large sizes including headlines. This font was made specifically to be web type. 
+ Source files are available from  Google Code .
+To contribute to the project contact  Eben Sorkin ."
+ewert,"Ewert is slab serif wood type inspired by and loosely based on the collection of cultural infographic maps by Estonian graphic artist Olev Soans. Ewert has been higly simplified for screen usage yet still includes the characteristic ""ornamental leg"" of the letterform.   Ewert was designed by Johan Kallas and Mihkel Virkus."
+imperialscript,"Imperial Script is a formal script font with clean connections and an elegant look. The thin connectors combined with the heavier shade strokes makes Imperial perfect for invitations, formal events and seasonal settings.
+ 
+ 
+It comes with Latin Character sets including Western, Central, and Vietnamese language support.
+ 
+ 
+To contribute, see  github.com/googlefonts/imperial-script ."
+rougescript,"Rouge Script is a formal script type, initiall drawn by hand with a copperplate nib and redrawn with the termination style of a brush script. This gives it the flavor of a casual script.   It is very soft and has fast curves, while its low slant angle makes it very legible and improves the render on-screen. It works perfectly for titles or short phrases in branding, magazines, food, feminine and fashion related typography."
+tangerine,"Tangerine is a calligraphic typeface inspired by many italic chancery hands from the 16th and 17th centuries. 
+Its tall ascender, the most distinct characteristic of this type, takes a wide line space between lines and gives a graceful texture. 
+Use Tangerine for titles or short texts at large sizes because of the short height of lowercase letters. 
+Tangerine was named after a woman who encouraged Toshi to begin this work."
+leaguescript,"This ain’t no Lucida. League Script is a modern, coquettish script font that sits somewhere between your high school girlfriend’s love notes and handwritten letters from the ’20s. Designed for  the League of Moveable Type , it includes ligatures and will act as the framework for future script designs."
+bangers,"Bangers is a comicbook style font which packs a punch! It was designed in the style of mid-20th century superhero comics cover lettering in mind. 
+ To contribute, see  github.com/googlefonts/bangers ."
+rubikglitch,"The Generative Fonts  is an original, script-generated collection of fonts based on the Google Fonts  Rubik  by Hubert and Fischer, Meir Sadan and Cyreal. The code used to generate it can be found at  github.com/NaN-xyz/Glyph-Filters .
+ 
+ 
+Check for more  Rubik ""Filtered"" fonts !.
+ 
+ 
+To contribute, see  github.com/NaN-xyz/Rubik-Filtered ."
+delius,"Delius is a high quality comic book lettering typeface super-family; it has several families, Delis, Delius Unicase and Delius Swash Caps.   A round marker was used to define Delius's stroke: the line gets thicker at both ends to define the beginning and end of the stroke, as a marker line would do, and the ductus imitates the movements of handwriting."
+borel,"What considerations should be taken into account when approaching typography in the context of simultaneous learning of reading and writing? Borel is a French cursive primer — developed with primary school teachers and speech therapists — which aims aims to harmonise cursive strokes and common typographic structure. This typeface, named in tribute to Suzanne Borel-Maisonny (a pioneer in speech therapy), boasts a sturdy design featuring low contrast and a generous x-height. The letters are intentionally open and clearly differentiated while adhering to the conventions of handwriting in French schools. 
+ 
+ 
+    Due to the specifity of this project, the font only supports a limited set of glyphs allowing to write in French, English, Spanish, Catalan, German, Portuguese, Turkish and Vietnamese. Please submit language requests with images in the issue tracker of the reposotory linked below.
+ 
+ 
+    Find more documentation here:  Français  |  English 
+ 
+ To contribute, please see  github.com/RosaWagner/Borel ."
+macondo,"Macondo. The first purpose of this typeface was to provide an original and systematized style of calligraphy adapted into a modern digital font. The forms are inspired by some illustrations created for a tarot card game, itself inspired by the work of Colombian literature Nobel prize winning author, Gabriel García Márquez, «Cien Años de Soledad». Early versions of this font were made in 1997, but recently in 2009 it was substantially improved. Macondo includes several cap swashes and other stylish alternates, and a sister family  Macondo Swash Caps  is also available."
+caesardressing,Caesar Dressing is a 'Markers' take on a Greek alphabet. Open Window fonts gravitate towards more experimental or spontaneous renderings and this one doesn't look out of place next to the most experimental of those. It also maintains the geometric balance of a classic Greek-font quite effectively. Designed by Dathan Boardman of Open Window.
+almendra,"Almendra is a typeface design based on calligraphy. Its style is related to
+the chancery and gothic hands. It is intended to be used in long texts,
+especially young children's literature. Almendra's black and white forms
+generate a nice texture in small sizes, while its many details appear when
+given the opportunity in huge sizes. The main challenge was to make compatible
+dialectic elements, especially balancing legibility and formal identity.
+Almendra was selected to be exhibited at the Bienal Iberoamericana de Diseo
+in 2010 and was part of the German editorial project Typodarium 2012. 
+ This is the Regular family, and there are sister
+ Small Cap  and 
+ Display 
+families."
+thegirlnextdoor,"'the girl next door' is based on the handwriting of a middle school geography teacher.   From her personality to her handwriting, she is the typical girl next door - she puts you at ease in every situation and is perfectly comfortable and confident in who she is.  Her handwriting reflects that and is readable, neat, and yet comfortable and welcoming."
+quantico,Quantico is an angular typeface family that was inspired by old beer packaging and military lettering. It utilizes 30 degree angles and completely straight lines to form unique character shapes.   Documentation can be found at  www.madtype.com  and to contribute to the project contact Matthew Desmond at  mattdesmond@gmail.com
+michroma,"Michroma is a reworking and remodelling of the rounded-square sans genre that is closely associated with a 1960s feeling of the future. This is due to the popularity of Microgramma, designed by Aldo Novarese and Alessandro Buttiin in 1952, which pioneered the style; and the most famous typeface family of the genre that came 10 years later in Novarese’s Eurostile. 
+ Michroma has character widths and stem weights perfectly formed to fit today's digital screens; Vernon Adams has pioneered a design process with this font that produces excellent results on screen with no manual hinting involved. 
+ The Mai 2023 update features a bigger glyphset and some minor aesthetic modifications. 
+ To contribute, see  github.com/googlefonts/Michroma-font"
+iceberg,"Iceberg is a slim condensed decorative webfont by Victor Kharyk suitable for medium to large sizes. It is monolinear and mostly monospaced, has long ascenders and descenders, and a modular construction that builds a rhythm. These features improve overall readability. Its monolinear strokes and 45 degree cuts echo letters made from folded tape."
+pinyonscript,"Pinyon Script is a romantic round hand script-style font.
+It also features swashes that are confident and showy, somehow giving the type a feeling suggestive of the American West.
+Perhaps this is why, despite its refinement and aristocratic style, Pinyon Script manages to feel so friendly.
+Pinyon Script uses high stroke contrast and is very slanted, making it most suitable for use at larger sizes.
+ 
+ 
+After expanding the glyphset and language support in June 2022, Pinyon Script now supports African Pri, thanks to the 2024 update.
+ 
+ 
+To contribute, visit
+ 
+github.com/SorkinType/Pinyon
+ 
+."
+gochihand,"Gochi Hand is a typographic interpretation of the handwriting of a teenager. The style is fresh, not like the letters made by a calligrapher, but those of an ordinary person. The text line is spontaneous but solid and consistent, expressive and works well on screen, even in small sizes. The glyphs were carefully designed with a good curve quality that makes it able to look good when printed too. 
+ Designed by Juan Pablo del Peral for  Huerta Tipográfica . 
+ To contribute, see  github.com/huertatipografica/gochi-hand ."
