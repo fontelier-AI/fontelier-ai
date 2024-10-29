@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="retro">
+<html lang="en" data-theme="nord">
 
 <head>
     <title>Font Recommendations | Fontelier AI</title>
@@ -13,14 +13,15 @@
         tailwind.config = {
             plugins: [daisyui],
             daisyui: {
-                themes: ["retro"],
+                themes: ["nord"],
             }
         };
     </script>
 
-    <!-- Load Google Fonts dynamically -->
+    <!-- Load Google Fonts dynamically with proper capitalization -->
     {% for font in api_result %}
-    <link href="https://fonts.googleapis.com/css2?family={{ font[0] | replace(' ', '+') }}&display=swap" rel="stylesheet">
+        {% set formatted_font = font[0].capitalize() %}
+        <link href="https://fonts.googleapis.com/css?family={{ formatted_font | replace(' ', '+') }}&display=swap" rel="stylesheet">
     {% endfor %}
 </head>
 
