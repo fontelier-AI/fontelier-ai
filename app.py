@@ -89,9 +89,10 @@ def generate_justification(user_input, top_fonts):
                 {
                     "role": "system",
                     "content": (
-                        "You are an expert in typography and design. Based on the following user input "
+                        "You are an expert in typography and design. Based on the following user input"
                         "and font recommendations, provide a very brief justification of why these fonts were chosen. "
                         "The justification should align with the user's description, mood, and use case."
+                        "Make sure your response doesn't use any text styling such as bold or italic"
                     )
                 },
                 {
