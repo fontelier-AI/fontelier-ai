@@ -34,9 +34,9 @@ def load_font_embeddings():
             })
     return font_data
 
-# Remove unwanted characters from text
+# Remove unwanted characters from markdwown output
 def remove_characters(text):
-    chars_to_remove = [',', '"', "'", '-', '*']
+    chars_to_remove = ['"', "'", '-', '*']
     for char in chars_to_remove:
         text = text.replace(char, '')
     return text
@@ -150,7 +150,11 @@ def step4():
 @app.route('/result', methods=['GET', 'POST'])
 def result():
     if request.method == 'POST':
-        return redirect(url_for('index'))
+        # Get updated user input from the form
+        user_data['option'] = request.form.get('option', '')
+        user_data['heading_type'] = request.form.get('heading_type', '')
+        user_data['description'] = request.form.get('description', '')
+        user_data['mood'] = request.form.get('mood', '')
 
     # Combine user input into a single string
     user_input = f"{user_data.get('option', '')} {user_data.get('heading_type', '')} {user_data.get('description', '')} {user_data.get('mood', '')}".strip()

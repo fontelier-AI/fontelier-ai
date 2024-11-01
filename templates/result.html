@@ -85,23 +85,34 @@
             <p>{{ cleaned_justification }}</p>
         </div>
         
-        <!-- User Inputs Section (25%) -->
-        <div class="w-full lg:w-1/4 bg-white shadow-xl p-8 rounded-lg space-y-6">
-            <h2 class="text-3xl font-bold text-primary text-left">Your Inputs:</h2>
-            <ul class="list-none space-y-4">
-                <li><strong>Design:</strong> {{ data.get('option', 'N/A') }}</li>
-                <li><strong>Text Type:</strong> {{ data.get('heading_type', 'N/A') }}</li>
-                <li><strong>Description:</strong> {{ data.get('description', 'N/A') }}</li>
-                <li><strong>Mood:</strong> {{ data.get('mood', 'N/A') }}</li>
-            </ul>
+    <!-- User Inputs Section (25%) -->
+    <div class="w-full lg:w-1/4 bg-white shadow-xl p-8 rounded-lg space-y-6">
+        <h2 class="text-3xl font-bold text-primary text-left">Your Inputs:</h2>
+        <form method="POST" action="{{ url_for('result') }}">
+            <div class="space-y-4">
+                <label><strong>Design:</strong>
+                    <input type="text" name="option" value="{{ data.get('option', '') }}" class="input input-bordered w-full" />
+                </label>
+                <label><strong>Text Type:</strong>
+                    <input type="text" name="heading_type" value="{{ data.get('heading_type', '') }}" class="input input-bordered w-full" />
+                </label>
+                <label><strong>Description:</strong>
+                    <input type="text" name="description" value="{{ data.get('description', '') }}" class="input input-bordered w-full" />
+                </label>
+                <label><strong>Mood:</strong>
+                    <input type="text" name="mood" value="{{ data.get('mood', '') }}" class="input input-bordered w-full" />
+                </label>
+            </div>
+            
+            <!-- Regenerate Button -->
+            <button type="submit" class="btn btn-primary mt-4">Regenerate</button>
+        </form>
 
-            <form method="POST" class="mt-4">
-                <button type="submit" class="btn btn-primary transition-transform">
-                    Restart
-                </button>
-            </form>
-        </div>
-
+        <!-- Restart Button -->
+        <form method="GET" action="{{ url_for('index') }}" class="mt-4">
+            <button type="submit" class="btn btn-secondary">Restart</button>
+        </form>
+    </div>
     </div>
 
     <script>
