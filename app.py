@@ -34,6 +34,13 @@ def load_font_embeddings():
             })
     return font_data
 
+# Remove unwanted characters from text
+def remove_characters(text):
+    chars_to_remove = [',', '"', "'", '-', '*']
+    for char in chars_to_remove:
+        text = text.replace(char, '')
+    return text
+
 # Clean and extract meaning using GPT-3.5
 def clean_and_extract_meaning(user_input):
     try:
@@ -90,9 +97,8 @@ def generate_justification(user_input, top_fonts):
                     "role": "system",
                     "content": (
                         "You are an expert in typography and design. Based on the following user input"
-                        "and font recommendations, provide a very brief justification of why these fonts were chosen. "
+                        "and font recommendations, provide a sentence-long justification of why each of these fonts were chosen. "
                         "The justification should align with the user's description, mood, and use case."
-                        "Make sure your response doesn't use any text styling such as bold or italic"
                     )
                 },
                 {
@@ -102,9 +108,8 @@ def generate_justification(user_input, top_fonts):
             ]
             
         )
-        # Extract and return the justification
+        # Extract, clean and return the justification
         justification = response.choices[0].message['content'].strip()
-        print(f"Justification: {justification}")  # For debugging
         return justification
     except Exception as e:
         print(f"Error generating justification: {e}")
@@ -196,6 +201,7 @@ def result():
 
     # Generate a justification using GPT-3.5
     justification = generate_justification(user_input, top_fonts)
+    cleaned_justification = remove_characters(justification)
 
     # Print top 3 fonts and their URLs to the terminal for debugging
     print("\nTop 3 Recommended Fonts:")
@@ -205,7 +211,7 @@ def result():
         print(f"Font: {font_name}, URL: {font_url}")
 
     # Render the result page with the top 3 fonts
-    return render_template('result.html', data=user_data, api_result=top_fonts_with_links, justification=justification)
+    return render_template('result.html', data=user_data, api_result=top_fonts_with_links, cleaned_justification=cleaned_justification)
 
 
 # Home route to restart
