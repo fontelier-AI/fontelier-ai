@@ -119,7 +119,8 @@ def generate_justification(user_input, top_fonts):
                     "role": "system",
                     "content": (
                         "You are an expert in typography and design. Based on the following user input"
-                        "and font recommendations, provide a sentence-long justification of why each of these fonts were chosen. "
+                        "and font recommendations, provide a justification for why each of these fonts"
+                        "were chosen in once sentence for each font."
                         "The justification should align with the user's description, mood, and use case."
                     )
                 },
@@ -182,6 +183,7 @@ def remove_font(index):
 
             if next_font not in user_data["top_fonts"]:
                 user_data["top_fonts"].insert(index, next_font)
+                user_data["top_fonts"].sort(key=lambda x: x[2], reverse=True)  # Keep list in descending similarity
                 break
 
         # Save the updated top_fonts to history
@@ -205,10 +207,12 @@ def result():
     user_input = f"{user_data.get('option', '')} {user_data.get('heading_type', '')} {user_data.get('description', '')} {user_data.get('mood', '')}".strip()
 
     if user_data["embedding"] is None:
+        print("Calling OpenAI API to generate embedding.")
         cleaned_input = clean_and_extract_meaning(user_input)
         user_embedding = get_openai_embedding(cleaned_input)
 
         if user_embedding is None:
+            print("Failed to generate embedding.")
             return render_template('result.html', data=user_data, api_result=[
                 {"name": "Error", "description": "Failed to generate recommendations.", "similarity": 0.0}
             ])
@@ -216,6 +220,7 @@ def result():
         user_data["top_fonts"] = generate_top_fonts(user_embedding)
     else:
         user_embedding = user_data["embedding"]
+        print("Using cached embedding from memory.")
 
     # Prepare fonts for display with links
     top_fonts_with_links = [
