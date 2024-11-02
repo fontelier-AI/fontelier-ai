@@ -76,6 +76,12 @@
                                 The quick brown fox jumps over the lazy dog.
                             </td>
                             <td>{{ "%.2f" | format(font[2] * 100) }}%</td>
+                            <td>
+                                <!-- Remove button to replace the font -->
+                                <form method="POST" action="{{ url_for('remove_font', index=loop.index0) }}">
+                                    <button type="submit" class="btn btn-secondary btn-xs">X</button>
+                                </form>
+                            </td>
                         </tr>
                         {% endfor %}
                     </tbody>
