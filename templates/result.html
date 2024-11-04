@@ -31,9 +31,9 @@
         }
     </style>
 
-    <!-- Load Google Fonts dynamically with proper capitalization -->
+    <!-- Load Google Fonts dynamically -->
     {% for font in api_result %}
-        {% set formatted_font = font[0].capitalize() %}
+        {% set formatted_font = font[0] %}
         <link href="https://fonts.googleapis.com/css?family={{ formatted_font | replace(' ', '+') }}&display=swap" rel="stylesheet">
     {% endfor %}
 </head>
@@ -66,23 +66,25 @@
                     </thead>
                     <tbody>
                         {% for font in api_result %}
-                        <tr class="hover">
-                            <th>{{ loop.index }}</th>
-                            <td class="font-semibold">
-                                <a href="{{ font[3] }}" target="_blank" class="font-link">
-                                    {{ font[0] }}
-                                </a></td>
-                            <td style="font-family: '{{ font[0] }}'; font-size: 1.25rem;" class="preview">
-                                The quick brown fox jumps over the lazy dog.
-                            </td>
-                            <td>{{ "%.2f" | format(font[2] * 100) }}%</td>
-                            <td>
-                                <!-- Remove button to replace the font -->
-                                <form method="POST" action="{{ url_for('remove_font', index=loop.index0) }}">
-                                    <button type="submit" class="btn btn-secondary btn-xs">X</button>
-                                </form>
-                            </td>
-                        </tr>
+                            {% set formatted_font = font[0] %} <!-- Set the formatted font name here -->
+                            <tr class="hover">
+                                <th>{{ loop.index }}</th>
+                                <td class="font-semibold">
+                                    <a href="{{ font[3] }}" target="_blank" class="font-link">
+                                        {{ formatted_font }}
+                                    </a>
+                                </td>
+                                <td style="font-family: '{{ formatted_font }}'; font-size: 1.25rem;" class="preview">
+                                    The quick brown fox jumps over the lazy dog.
+                                </td>
+                                <td>{{ "%.2f" | format(font[2] * 100) }}%</td>
+                                <td>
+                                    <!-- Remove button to replace the font -->
+                                    <form method="POST" action="{{ url_for('remove_font', index=loop.index0) }}">
+                                        <button type="submit" class="btn btn-secondary btn-xs">X</button>
+                                    </form>
+                                </td>
+                            </tr>
                         {% endfor %}
                     </tbody>
                 </table>
