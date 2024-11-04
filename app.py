@@ -23,7 +23,8 @@ user_data = {"embedding": None}
 session_data = {
     "sorted_fonts": None,
     "top_font_history": [],
-    "next_font_index": 3  # Tracks the next font to use in sorted_fonts after the initial top 3
+    "next_font_index": 3,  # Tracks the next font to use in sorted_fonts after the initial top 3
+    "justification": {}
 }
 
 # Load pre-computed font embeddings from CSV
@@ -108,6 +109,14 @@ def generate_top_fonts(user_embedding):
 
 # Generate justifications between user's input and the top fonts
 def generate_justification(user_input, top_fonts):
+    font_names = ", ".join([font[0] for font in top_fonts])
+    cache_key = f"{user_input}_{font_names}"
+    
+    # Check cache for justification
+    if cache_key in session_data["justification"]:
+        print("Using cached justification.")
+        return session_data["justification"][cache_key]
+    
     try:
         # Format the top fonts into a readable string
         font_names = ", ".join([font[0] for font in top_fonts])
@@ -131,8 +140,9 @@ def generate_justification(user_input, top_fonts):
             ]
             
         )
-        # Extract, clean and return the justification
+        # Extract, clean, cache and return the justification    
         justification = response.choices[0].message['content'].strip()
+        session_data["justification"][cache_key] = justification  # Cache the justification
         return justification
     except Exception as e:
         print(f"Error generating justification: {e}")
