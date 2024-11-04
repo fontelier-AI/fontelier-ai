@@ -18,6 +18,19 @@
         };
     </script>
 
+     <!-- Custom CSS for hover effect -->
+     <style>
+        .font-link {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.3s, text-decoration 0.3s;
+        }
+        .font-link:hover {
+            color: #1d4ed8; /* Tailwind's blue-600 */
+            text-decoration: underline;
+        }
+    </style>
+
     <!-- Load Google Fonts dynamically with proper capitalization -->
     {% for font in api_result %}
         {% set formatted_font = font[0].capitalize() %}
@@ -25,20 +38,21 @@
     {% endfor %}
 </head>
 
-<body class="bg-base-200 min-h-screen">
+<body class="bg-base-200 min-h-screen flex items-center justify-center">
     <div class="container mx-auto flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-8">
         
         <!-- Fonts Section (75%) -->
         <div class="w-full lg:w-3/4 bg-white shadow-xl p-8 rounded-lg space-y-6">
             <h2 class="text-3xl font-bold text-primary text-left">Top 3 Recommended Fonts:</h2>
 
+            
             <!-- Custom Text Input for Preview -->
             <div class="mb-4">
                 <input type="text" id="customText" placeholder="Type custom text here" 
-                       class="input input-bordered w-full max-w-lg" 
-                       oninput="updatePreviews()" />
+                class="input input-bordered w-full max-w-lg" 
+                oninput="updatePreviews()" />
             </div>
-
+            
             <!-- Table to Display Fonts -->
             <div class="overflow-x-auto">
                 <table class="table w-full">
@@ -54,35 +68,57 @@
                         {% for font in api_result %}
                         <tr class="hover">
                             <th>{{ loop.index }}</th>
-                            <td class="font-semibold">{{ font[0] }}</td>
+                            <td class="font-semibold">
+                                <a href="{{ font[3] }}" target="_blank" class="font-link">
+                                    {{ font[0] }}
+                                </a></td>
                             <td style="font-family: '{{ font[0] }}'; font-size: 1.25rem;" class="preview">
                                 The quick brown fox jumps over the lazy dog.
                             </td>
                             <td>{{ "%.2f" | format(font[2] * 100) }}%</td>
+                            <td>
+                                <!-- Remove button to replace the font -->
+                                <form method="POST" action="{{ url_for('remove_font', index=loop.index0) }}">
+                                    <button type="submit" class="btn btn-secondary btn-xs">X</button>
+                                </form>
+                            </td>
                         </tr>
                         {% endfor %}
                     </tbody>
                 </table>
             </div>
+            <h3>Why are these fonts suitable?</h3>
+            <p>{{ cleaned_justification }}</p>
         </div>
+        
+    <!-- User Inputs Section (25%) -->
+    <div class="w-full lg:w-1/4 bg-white shadow-xl p-8 rounded-lg space-y-6">
+        <h2 class="text-3xl font-bold text-primary text-left">Your Inputs:</h2>
+        <form method="POST" action="{{ url_for('result') }}">
+            <div class="space-y-4">
+                <label><strong>Design:</strong>
+                    <input type="text" name="option" value="{{ data.get('option', '') }}" class="input input-bordered w-full" />
+                </label>
+                <label><strong>Text Type:</strong>
+                    <input type="text" name="heading_type" value="{{ data.get('heading_type', '') }}" class="input input-bordered w-full" />
+                </label>
+                <label><strong>Description:</strong>
+                    <input type="text" name="description" value="{{ data.get('description', '') }}" class="input input-bordered w-full" />
+                </label>
+                <label><strong>Mood:</strong>
+                    <input type="text" name="mood" value="{{ data.get('mood', '') }}" class="input input-bordered w-full" />
+                </label>
+            </div>
+            
+            <!-- Regenerate Button -->
+            <button type="submit" class="btn btn-primary mt-4">Regenerate</button>
+        </form>
 
-        <!-- User Inputs Section (25%) -->
-        <div class="w-full lg:w-1/4 bg-white shadow-xl p-8 rounded-lg space-y-6">
-            <h2 class="text-3xl font-bold text-primary text-left">Your Inputs:</h2>
-            <ul class="list-none space-y-4">
-                <li><strong>Design:</strong> {{ data.get('option', 'N/A') }}</li>
-                <li><strong>Text Type:</strong> {{ data.get('heading_type', 'N/A') }}</li>
-                <li><strong>Description:</strong> {{ data.get('description', 'N/A') }}</li>
-                <li><strong>Mood:</strong> {{ data.get('mood', 'N/A') }}</li>
-            </ul>
-
-            <form method="POST" class="mt-4">
-                <button type="submit" class="btn btn-primary transition-transform">
-                    Restart
-                </button>
-            </form>
-        </div>
-
+        <!-- Restart Button -->
+        <form method="GET" action="{{ url_for('index') }}" class="mt-4">
+            <button type="submit" class="btn btn-secondary">Restart</button>
+        </form>
+    </div>
     </div>
 
     <script>
