@@ -9,28 +9,34 @@ Smart font recommendations tailored to your design needs, powered by AI-driven i
 
 ## How to Run the Program
 
-1. **Clone the Repository**  
+1. **Clone the repository**  
    ```bash
    git clone git clone https://github.com/fontelier-AI/fontelier-ai
    ```
 
-2. **Create an API Key File**  
+2. **Create an API key file**  
    In the main project directory, create a file named `api-key.txt`. Then, paste a valid OpenAI API key into the file:
    ```
    sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
    ```
 
-4. **Run the Application**  
-   Start the app by running:
+4. **Run the application in your terminal**  
    ```bash
    python app.py
    ```
 
-5. **Access the Application**  
-   Open your browser and visit the following URL:
+5. **Access the application through the following URL:**  
    ```
    http://127.0.0.1:5000
    ```
+
+## Data Processing Outline
+<p align="center">
+   <img width="700" alt="fontelier_data_1" src="https://github.com/user-attachments/assets/3a68b480-14f2-4a73-8e4b-205fa1b7357b">
+   <img width="700" alt="fontelier_data_2" src="https://github.com/user-attachments/assets/90f7a2fb-e124-4d2b-a043-aa099cb93291">
+   <img width="700" alt="fontelier_data_3" src="https://github.com/user-attachments/assets/a7706296-95e7-472b-964b-2218ba4fc970">
+   <img width="700" alt="fontelier_data_4" src="https://github.com/user-attachments/assets/0e6931f8-472c-47c4-91e6-b074af562d0e">
+</p>
 
 ## Developing Team
 - Jessica Tan 
