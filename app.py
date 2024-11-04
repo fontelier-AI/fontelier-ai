@@ -30,7 +30,7 @@ session_data = {
 # Load pre-computed font embeddings from CSV
 def load_font_embeddings():
     font_data = []
-    with open('data/embeddings.csv', mode='r') as file:
+    with open('data/embeddings_updated.csv', mode='r') as file:
         reader = csv.DictReader(file)
         for row in reader:
             font_data.append({
