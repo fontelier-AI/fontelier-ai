@@ -3,41 +3,25 @@
 
 <head>
     <title>Welcome | Fontelier AI</title>
-
-    <!-- Include Tailwind CSS with DaisyUI plugin via CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-
-    <script>
-        // Tailwind + DaisyUI Config
-        tailwind.config = {
-            plugins: [daisyui],
-            daisyui: {
-                themes: ["nord"],
-            }
-        };
-    </script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='output.css') }}">
 </head>
 
 <body class="bg-gradient min-h-screen flex flex-col items-center justify-center space-y-4">
     <!-- Main Container -->
-    <div class="container mx-auto p-16 max-w-2xl text-center bg-white shadow-lg rounded-lg">
+    <div class="container mx-auto p-16 max-w-2xl text-center bg-white shadow-lg rounded-lg space-y-6">
         <!-- Logo Section -->
         <div class="flex justify-center mb-4">
             <img src="{{ url_for('static', filename='logo.svg') }}" alt="Logo" class="w-16 h-16">
         </div>
-        
-        <!-- Title -->
-        <h2 class="text-3xl font-semibold text-primary mb-6">I want help finding...</h2>
-
+                
         <!-- Selection Options -->
-        <form method="POST" class="space-y-6 max-w-lg mx-auto">
+        <form method="POST" class="max-w-lg mx-auto space-y-12">
+            <h2 class="text-3xl font-semibold text-primary">I want help finding...</h2>
             <div class="grid grid-cols-2 gap-4">
                 <!-- Single Font Option -->
                 <label class="cursor-pointer w-full">
                     <input type="radio" name="option" value="A single font" class="hidden peer">
-                    <div class="flex flex-col items-center justify-center w-full min-h-32 text-lg font-semibold bg-tertiary text-gray-700 rounded-lg transition-all
+                    <div class="flex flex-col items-center justify-center w-full min-h-32 text-lg font-semibold text-gray-700 rounded-lg transition-all
                                 peer-checked:bg-gray-200 peer-checked:shadow-inner peer-checked:border-primary border border-gray-300">
                         <!-- Icon Section -->
                         <img src="{{ url_for('static', filename='single-font-icon.svg') }}" alt="Single Font Icon" class="w-12 h-12 mb-2"> <!-- Replace with actual icon path -->
@@ -58,7 +42,7 @@
             </div>
 
             <!-- Submit Button -->
-            <button type="submit" class="btn btn-outline btn-primary w-full rounded-full text-lg font-semibold mt-6">
+            <button type="submit" class="btn btn-outline btn-primary w-full rounded-full text-lg font-semibold">
                 Next
             </button>
         </form>

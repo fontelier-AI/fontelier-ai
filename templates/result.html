@@ -3,33 +3,7 @@
 
 <head>
     <title>Font Recommendations | Fontelier AI</title>
-
-    <!-- Include Tailwind CSS with DaisyUI plugin via CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <script>
-        // Tailwind + DaisyUI Config
-        tailwind.config = {
-            plugins: [daisyui],
-            daisyui: {
-                themes: ["nord"],
-            }
-        };
-    </script>
-
-     <!-- Custom CSS for hover effect -->
-     <style>
-        .font-link {
-            color: inherit;
-            text-decoration: none;
-            transition: color 0.3s, text-decoration 0.3s;
-        }
-        .font-link:hover {
-            color: #1d4ed8; /* Tailwind's blue-600 */
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='output.css') }}">
 
     <!-- Load Google Fonts dynamically -->
     {% for font in api_result %}
@@ -38,7 +12,7 @@
     {% endfor %}
 </head>
 
-<body class="bg-base-200 min-h-screen flex items-center justify-center">
+<body class="bg-gradient min-h-screen flex items-center justify-center">
     <div class="container mx-auto flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-8">
         
         <!-- Fonts Section (75%) -->

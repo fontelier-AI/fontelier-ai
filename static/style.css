@@ -1,3 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .bg-gradient {
     background: linear-gradient(to bottom right, #f3f4f6, #e5e7eb, #f1e1f1);
+}
+
+.font-link {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+.font-link:hover {
+    color: #1d4ed8; /* Tailwind's blue-600 */
+    text-decoration: underline;
 }

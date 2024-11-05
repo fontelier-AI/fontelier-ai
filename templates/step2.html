@@ -3,31 +3,10 @@
 
 <head>
     <title>Welcome | Fontelier AI</title>
-
-    <!-- Include Tailwind CSS with DaisyUI plugin via CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-
-    <script>
-        // Tailwind + DaisyUI Config
-        tailwind.config = {
-            plugins: [daisyui],
-            daisyui: {
-                themes: ["nord"],
-            }
-        };
-    </script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='output.css') }}">
 </head>
 
 <body class="bg-gradient min-h-screen flex flex-col items-center justify-center space-y-4">
-    <!-- <div>
-        <ul class="steps w-full">
-            <li class="step step-primary"></li>
-            <li class="step"></li>
-            <li class="step"></li>
-        </ul>
-    </div> -->
     
     <div class="container mx-auto p-16 max-w-2xl text-center bg-white shadow-lg rounded-lg">
         <!-- Logo Section -->
@@ -38,8 +17,7 @@
         
     <!-- Form Container -->
     <form method="POST" class="card p-6 rounded-lg space-y-12">
-        <h2 class="text-3xl font-semi-bold text-primary text-center">Is this for a title, subtitle, or body text?</h2>
-
+        <h2 class="text-3xl font-semibold text-primary">Is this for a title, subtitle, or body text?</h2>
         <div class="grid grid-cols-3 gap-4">
             <!-- Title Option -->
             <label class="cursor-pointer w-full">

@@ -3,21 +3,8 @@
 
 <head>
     <title>Welcome | Fontelier AI</title>
-
-    <!-- Include Tailwind CSS with DaisyUI plugin via CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-
-    <script>
-        // Tailwind + DaisyUI Config
-        tailwind.config = {
-            plugins: [daisyui],
-            daisyui: {
-                themes: ["nord"],
-            }
-        };
-    </script>
+    <!-- Tailwind + DaisyUI CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='output.css') }}">
 </head>
 
 <body class="bg-gradient min-h-screen flex items-center justify-center">
@@ -37,7 +24,7 @@
         </div>
               <!-- Start Button -->
               <div class="flex-grow flex justify-center">
-                <a href="{{ url_for('step1') }}" class="btn btn-outline btn-primary rounded-full">Let's Get Started!</a>
+                <a href="{{ url_for('step1') }}" class="btn btn-outline btn-primary rounded-full hover:text-white">Let's Get Started!</a>
             </div>
     </div>
 

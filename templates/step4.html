@@ -3,34 +3,34 @@
 
 <head>
     <title>Welcome | Fontelier AI</title>
-
-    <!-- Include Tailwind CSS with DaisyUI plugin via CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <script>
-        // Tailwind + DaisyUI Config
-        tailwind.config = {
-            plugins: [daisyui],
-            daisyui: {
-                themes: ["nord"],
-            }
-        };
-    </script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='output.css') }}">
 </head>
 
-<body class="bg-base-200 min-h-screen flex flex-col items-center justify-center space-y-4">
-    <progress class="progress progress-secondary w-96" value="90" max="100"></progress>
+<body class="bg-gradient min-h-screen flex flex-col items-center justify-center space-y-4">
 
     <!-- Form Container -->
-    <div>
-        <form method="POST" class="card w-96 bg-white shadow-xl p-6 rounded-lg space-y-4">
-            <h2 class="text-2xl font-bold text-primary text-left">What feelings or mood you want the typeface to imbue?</h2>
+    <div class="container mx-auto p-16 max-w-2xl text-center bg-white shadow-lg rounded-lg">
+        <!-- Logo Section -->
+        <div class="flex justify-center mb-4">
+            <img src="{{ url_for('static', filename='logo.svg') }}" alt="Logo" class="w-16 h-16">
+        </div>
+    
+        <progress class="progress progress-secondary max-w-xl" value="90" max="100"></progress>
+       
+        <form method="POST" class="card p-6 rounded-lg space-y-12">            
+            <h2 class="text-2xl font-bold text-primary text-center">What feelings or mood you want the typeface to imbue?</h2>
 
-            <textarea name="mood" class="textarea textarea-bordered" placeholder="Bio"></textarea>
+              <!-- Custom Prompt Input -->
+              <div class="flex items-center border rounded-lg p-2 bg-white shadow-inner">
+                <textarea 
+                    name="mood" 
+                    placeholder="Describe your fonts desired mood, style, or any other details..." 
+                    class="textarea w-full px-4 py-2 focus:outline-none resize-none"
+                    rows="3"></textarea>
+            </div>
 
             <!-- Submit Button -->
-            <button type="submit" class="btn btn-primary transition-transform">
+            <button type="submit" class="btn btn-outline btn-primary transition-transform rounded-full">
                 Next
             </button>
         </form>
