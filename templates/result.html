@@ -15,23 +15,27 @@
 
 <body class="bg-gradient min-h-screen flex flex-col items-center justify-start">
 
-    <!-- Logo Section -->
-    <div class="w-full max-w-6xl flex justify-start p-4">
-      <img src="{{ url_for('static', filename='fontelier-logo.svg') }}" alt="Logo" class="w-auto h-12">
-  </div>    <div class="container mx-auto flex flex-col lg:flex-row gap-8 p-4 lg:p-8">
+
+    <!-- Header Section with Logo and Restart Button -->
+    <div class="w-full max-w-6xl flex justify-between items-center p-4">
+        <!-- Logo on the Left -->
+        <img src="{{ url_for('static', filename='fontelier-logo.svg') }}" alt="Logo" class="w-auto h-12">
+        
+        <!-- Restart Button on the Right -->
+        <button type="button" class="btn btn-outline btn-primary w-32 flex items-center justify-center rounded-full text-m font-semibold">
+            Restart
+            <i data-lucide="undo-2" class="ml-2"></i>
+        </button>
+    </div>    
+
+    
+    <div class="container mx-auto flex flex-col lg:flex-row gap-8 p-4 lg:p-8">
         
         <!-- Left Section: Fonts Recommendations -->
         <section class="w-full lg:w-3/4 shadow-lg bg-white p-6 lg:p-8 rounded-lg">
             <header class="flex justify-between items-center mb-6">
                 <h2 class="text-3xl font-bold text-primary">Top 3 Recommended Fonts</h2>
             </header>
-            
-            <!-- Custom Text Input for Preview -->
-            <div class="mb-8">
-                <input type="text" id="customText" placeholder="Type custom text here" 
-                class="input input-bordered w-full" 
-                oninput="updatePreviews()" />
-            </div>
             
             <!-- Font Recommendations -->
             <div class="space-y-12">
@@ -63,7 +67,7 @@
                 </div>
                 <!-- Remove Button -->
                 <form method="POST" action="{{ url_for('remove_font', index=loop.index0) }}">
-                    <button type="submit" class="btn-xs rounded-full font-bold flex items-center justify-center">
+                    <button type="submit" class="rounded-full font-bold flex items-center justify-center">
                         <i data-lucide="x"></i>
                 </form>
                 
@@ -81,6 +85,13 @@
         <!-- Right Section: User Inputs -->
         <aside class="w-full lg:w-1/4 bg-white shadow-lg p-6 lg:p-8 rounded-lg">
             <h2 class="text-3xl font-bold text-primary mb-6">Your Inputs</h2>
+
+        <!-- Custom Text Input for Preview -->
+        <div class="mb-8">
+            <input type="text" id="customText" placeholder="Type custom text here" 
+            class="input input-bordered w-full" 
+            oninput="updatePreviews()" />
+        </div>
             
            <!-- User Inputs Form -->
         <form method="POST" action="{{ url_for('result') }}">
@@ -110,9 +121,7 @@
                 </label>
             </div>
               <!-- Regenerate Button -->
-              <button type="submit" class="btn btn-primary w-full rounded-full text-lg font-semibold mt-4">Regenerate<i data-lucide="refresh-ccw"></i></button>
-              <button type="submit" class="btn btn-secondary w-full rounded-full text-lg font-semibold mt-4">Restart<i data-lucide="undo-2"></i></button>
-              
+              <button type="submit" class="btn btn-primary w-full rounded-full text-m font-semibold mt-4">Regenerate<i data-lucide="refresh-ccw"></i></button>              
             </form>
         </aside>
     </div>
