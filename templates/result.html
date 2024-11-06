@@ -19,8 +19,10 @@
     <!-- Header Section with Logo and Restart Button -->
     <div class="w-full max-w-6xl flex justify-between items-center p-4">
         <!-- Logo on the Left -->
-        <img src="{{ url_for('static', filename='fontelier-logo.svg') }}" alt="Logo" class="w-auto h-12">
-        
+        <a href="{{ url_for('index') }}">
+            <img src="{{ url_for('static', filename='fontelier-logo.svg') }}" alt="Logo" class="w-auto h-12">
+        </a>
+                
         <!-- Restart Button on the Right -->
         <button type="button" class="btn btn-outline btn-primary w-32 flex items-center justify-center rounded-full text-m font-semibold">
             Restart
@@ -88,7 +90,7 @@
 
         <!-- Custom Text Input for Preview -->
         <div class="mb-8">
-            <input type="text" id="customText" placeholder="Type custom text here" 
+            <input type="text" id="customText" placeholder="Type text to preview" 
             class="input input-bordered w-full" 
             oninput="updatePreviews()" />
         </div>
