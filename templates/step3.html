@@ -2,35 +2,47 @@
 <html lang="en" data-theme="nord">
 
 <head>
-    <title>Welcome | Fontelier AI</title>
-
-    <!-- Include Tailwind CSS with DaisyUI plugin via CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <script>
-        // Tailwind + DaisyUI Config
-        tailwind.config = {
-            plugins: [daisyui],
-            daisyui: {
-                themes: ["nord"],
-            }
-        };
-    </script>
+    <title>Fontelier AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='output.css') }}">
 </head>
 
-<body class="bg-base-200 min-h-screen flex flex-col items-center justify-center space-y-4">
-    <progress class="progress progress-secondary w-96" value="60" max="100"></progress>
+<body class="bg-gradient min-h-screen flex flex-col items-center justify-start space-y-4">
 
-    <!-- Form Container -->
-    <div>
-        <form method="POST" class="card w-96 bg-white shadow-xl p-6 rounded-lg space-y-4">
-            <h2 class="text-2xl font-bold text-primary text-left">Describe what you are using this font for.</h2>
+    <!-- Logo Section -->
+    <div class="w-full max-w-10xl flex justify-start p-4">
+    <a href="{{ url_for('index') }}">
+        <img src="{{ url_for('static', filename='fontelier-logo.svg') }}" alt="Logo" class="w-auto h-12">
+        </a>       
+    </div>
 
-            <textarea name="description" class="textarea textarea-bordered" placeholder="Bio"></textarea>
+    <!-- Breadcrumbs Nav -->
+    <div class="text-sm breadcrumbs w-full max-w-2xl flex justify-center px-4 mb-6">
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('step1') }}">Design</a></li>
+            <li><a href="{{ url_for('step2') }}">Heading Style</a></li>
+            <li><span class="text-primary">Use Case</span></li>
+        </ul>
+    </div>
 
+    <!-- Main Container -->
+    <div class="container mx-auto p-16 max-w-2xl text-center bg-white shadow-lg rounded-lg">
+
+        <progress class="progress progress-secondary max-w-xl" value="60" max="100"></progress>
+
+        <form method="POST" class="card p-6 rounded-lg space-y-12">            
+            <h2 class="text-2xl font-bold text-primary text-center">What you are using this font for?</h2>
+
+            <!-- Custom Prompt Input -->
+            <div class="flex items-center border rounded-lg p-2 shadow-inner">
+                <textarea 
+                    name="description" 
+                    placeholder="...a birthday card for my Avengers loving cousin..." 
+                    class="textarea w-full px-4 py-2 focus:outline-none resize-none"
+                    rows="3"></textarea>
+            </div>
             <!-- Submit Button -->
-            <button type="submit" class="btn btn-primary transition-transform">
+            <button type="submit" class="btn btn-outline btn-primary transition-transform rounded-full">
                 Next
             </button>
         </form>

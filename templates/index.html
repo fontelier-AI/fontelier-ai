@@ -3,35 +3,31 @@
 
 <head>
     <title>Welcome | Fontelier AI</title>
-
-    <!-- Include Tailwind CSS with DaisyUI plugin via CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <script>
-        // Tailwind + DaisyUI Config
-        tailwind.config = {
-            plugins: [daisyui],
-            daisyui: {
-                themes: ["nord"],
-            }
-        };
-    </script>
+    <!-- Tailwind + DaisyUI CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='output.css') }}">
 </head>
 
-<body class="bg-base-200 min-h-screen flex items-center justify-center">
-    <!-- Header Section -->
-    <header class="mt-12 text-center">
-        <h1 class="text-5xl font-bold">Welcome to Fontelier AI.</h1>
-        <p class="py-6">
-            Discover the perfect font for your design projects effortlessly.
-        </p>
-
-        <!-- Start Button -->
-        <div class="flex-grow flex items-center justify-center">
-            <a href="{{ url_for('step1') }}" class="btn btn-primary">Get Started</a>
+<body class="bg-gradient min-h-screen flex items-center justify-center">
+    <!-- Main Container -->
+    <div class="container mx-auto p-16 max-w-2xl text-center bg-white shadow-lg rounded-lg space-y-8">
+    
+        <!-- Logo Section -->
+        <div class="flex justify-center mb-4">
+            <img src="{{ url_for('static', filename='fontelier-logo-sm.svg') }}" alt="Logo" class="w-auto h-16">
         </div>
-    </header>
+
+        <!-- Greeting Section -->
+        <div class="text-center mb-8 space-y-4">
+            <h1 class="text-4xl font-semibold">Hi, <span class="text-primary">Fontelier AI here</span></h1>
+            <h2 class="text-2xl font-bold mt-2">Stuck on choosing a font?</h2>
+            <p class="mt-2 text-gray-500">Helping you find the perfect font, from bold magazine spreads to polished professional emails.</p>
+        </div>
+              <!-- Start Button -->
+              <div class="flex-grow flex justify-center">
+                <a href="{{ url_for('step1') }}" class="btn btn-outline btn-primary rounded-full hover:text-white">Let's Get Started!</a>
+            </div>
+    </div>
+
 </body>
 
 </html>

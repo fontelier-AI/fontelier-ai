@@ -3,33 +3,8 @@
 
 <head>
     <title>Font Recommendations | Fontelier AI</title>
-
-    <!-- Include Tailwind CSS with DaisyUI plugin via CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <script>
-        // Tailwind + DaisyUI Config
-        tailwind.config = {
-            plugins: [daisyui],
-            daisyui: {
-                themes: ["nord"],
-            }
-        };
-    </script>
-
-     <!-- Custom CSS for hover effect -->
-     <style>
-        .font-link {
-            color: inherit;
-            text-decoration: none;
-            transition: color 0.3s, text-decoration 0.3s;
-        }
-        .font-link:hover {
-            color: #1d4ed8; /* Tailwind's blue-600 */
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='output.css') }}">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 
     <!-- Load Google Fonts dynamically -->
     {% for font in api_result %}
@@ -38,92 +13,142 @@
     {% endfor %}
 </head>
 
-<body class="bg-base-200 min-h-screen flex items-center justify-center">
-    <div class="container mx-auto flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-8">
-        
-        <!-- Fonts Section (75%) -->
-        <div class="w-full lg:w-3/4 bg-white shadow-xl p-8 rounded-lg space-y-6">
-            <h2 class="text-3xl font-bold text-primary text-left">Top 3 Recommended Fonts:</h2>
+<body class="bg-gradient min-h-screen flex flex-col items-center justify-start">
 
-            
-            <!-- Custom Text Input for Preview -->
-            <div class="mb-4">
-                <input type="text" id="customText" placeholder="Type custom text here" 
-                class="input input-bordered w-full max-w-lg" 
+
+    <!-- Header Section with Logo and Restart Button -->
+    <div class="w-full max-w-10xl flex justify-between items-center p-4">
+        <!-- Logo on the Left -->
+        <a href="{{ url_for('index') }}">
+            <img src="{{ url_for('static', filename='fontelier-logo.svg') }}" alt="Logo" class="w-auto h-12">
+        </a>
+                
+        <!-- Restart Button on the Right -->
+        <form method="GET" action="{{ url_for('index') }}" class="mt-4">
+            <button type="submit" class="btn btn-outline btn-primary w-32 flex items-center justify-center rounded-full text-m font-semibold">
+                Restart
+                <i data-lucide="undo-2" class="ml-2"></i>
+            </button>
+        </form>
+    </div>    
+
+    
+    <div class="container mx-auto flex flex-col lg:flex-row gap-8 p-4 lg:p-8">
+        
+        <!-- Left Section: Fonts Recommendations -->
+        <section class="w-full lg:w-3/4 space-y-12 shadow-lg bg-white p-6 lg:p-8 w-full rounded-lg">
+        
+        <header class="flex justify-between items-center">
+            <h2 class="text-3xl font-bold text-primary">Your Recommended Fonts</h2>
+        </header>
+        <!-- Font Recommendations -->
+        <div class="space-y-8">
+            {% for font in api_result %}
+            {% set formatted_font = font[0] %}
+            <div class="space-y-4">
+                    <!-- Font Name, Similarity, and Size Slider -->
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-4">
+                            <div class="text-sm font-link"> <a href="{{ font[3] }}" target="_blank" class="font-link">{{ formatted_font }}</a></div>
+                            <span>|</span>
+                            <div class="text-sm text-gray-400">
+                                Similarity: {{ "%.2f" | format(font[2] * 100) }}%
+                            </div>
+                            <span>|</span>
+                            <label class="flex items-center gap-4 w-1/4">
+                                <span class="text-sm text-gray-400">Resize</span>
+                                <input type="range" min="16" max="64" value="36" 
+                                    class="custom-slider"
+                                    oninput="adjustFontSize('{{ loop.index0 }}', this.value)">
+                            </label>
+                        </div>
+                        
+                        <!-- Size Slider -->
+
+                        <!-- Remove Button -->
+                        <form method="POST" action="{{ url_for('remove_font', index=loop.index0) }}">
+                            <button type="submit" class="btn btn-circle btn-outline btn-primary btn-sm mt-2">
+                                <i data-lucide="x"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                    <!-- Font Preview Text -->
+                    <p class="preview text-3xl font-semibold" 
+                       style="font-family: '{{ formatted_font }}';"
+                       id="fontPreview{{ loop.index0 }}">
+                       The quick brown fox jumps over the lazy dog.
+                    </p>
+            <!-- Divider -->
+            {% if not loop.last %} 
+                <hr class="my-6 border-gray-300">
+            {% endif %}
+            {% endfor %}
+            <hr class="my-4 border-gray-300">
+
+        </div>
+
+            <!-- Justification Section -->
+            <div class="border-primary">
+                <h3 class="text-xl font-semibold text-primary">Why are these fonts suitable?</h3>
+                <p class="mt-2 text-gray-600">{{ cleaned_justification }}</p>
+            </div>
+        </section>
+
+        <!-- Right Section: User Inputs -->
+        <aside class="w-full lg:w-1/4 bg-white shadow-lg p-6 lg:p-8 rounded-lg">
+        
+        <!-- Custom Text Input for Preview -->
+        <div class="mb-8">
+            <label class="block">
+                <strong>Preview Text:</strong>
+                <input type="text" id="customText" placeholder="Type some custom text" 
+                class="input input-bordered w-full" 
                 oninput="updatePreviews()" />
-            </div>
-            
-            <!-- Table to Display Fonts -->
-            <div class="overflow-x-auto">
-                <table class="table w-full">
-                    <thead>
-                        <tr>
-                            <th class="text-left">#</th>
-                            <th class="text-left">Font Name</th>
-                            <th class="text-left">Font Preview</th>
-                            <th class="text-left">Similarity</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {% for font in api_result %}
-                            {% set formatted_font = font[0] %} <!-- Set the formatted font name here -->
-                            <tr class="hover">
-                                <th>{{ loop.index }}</th>
-                                <td class="font-semibold">
-                                    <a href="{{ font[3] }}" target="_blank" class="font-link">
-                                        {{ formatted_font }}
-                                    </a>
-                                </td>
-                                <td style="font-family: '{{ formatted_font }}'; font-size: 1.25rem;" class="preview">
-                                    The quick brown fox jumps over the lazy dog.
-                                </td>
-                                <td>{{ "%.2f" | format(font[2] * 100) }}%</td>
-                                <td>
-                                    <!-- Remove button to replace the font -->
-                                    <form method="POST" action="{{ url_for('remove_font', index=loop.index0) }}">
-                                        <button type="submit" class="btn btn-secondary btn-xs">X</button>
-                                    </form>
-                                </td>
-                            </tr>
-                        {% endfor %}
-                    </tbody>
-                </table>
-            </div>
-            <h3>Why are these fonts suitable?</h3>
-            <p>{{ cleaned_justification }}</p>
+            </label>
         </div>
         
-    <!-- User Inputs Section (25%) -->
-    <div class="w-full lg:w-1/4 bg-white shadow-xl p-8 rounded-lg space-y-6">
-        <h2 class="text-3xl font-bold text-primary text-left">Your Inputs:</h2>
+        <h2 class="text-2xl font-bold text-primary mb-4">Your Inputs</h2>
+
+            
+        <!-- User Inputs Form -->
         <form method="POST" action="{{ url_for('result') }}">
             <div class="space-y-4">
-                <label><strong>Design:</strong>
+                <!-- Design Input (Small) -->
+                <label class="block">
+                    <strong>Design:</strong>
                     <input type="text" name="option" value="{{ data.get('option', '') }}" class="input input-bordered w-full" />
                 </label>
-                <label><strong>Text Type:</strong>
+
+                <!-- Heading Type Input (Small) -->
+                <label class="block">
+                    <strong>Heading Type:</strong>
                     <input type="text" name="heading_type" value="{{ data.get('heading_type', '') }}" class="input input-bordered w-full" />
                 </label>
-                <label><strong>Description:</strong>
-                    <input type="text" name="description" value="{{ data.get('description', '') }}" class="input input-bordered w-full" />
+
+                <!-- Description Textarea (Large) -->
+                <label class="block">
+                    <strong>Use Case:</strong>
+                    <textarea name="description" class="textarea textarea-bordered w-full h-24">{{ data.get('description', '') }}</textarea>
                 </label>
-                <label><strong>Mood:</strong>
-                    <input type="text" name="mood" value="{{ data.get('mood', '') }}" class="input input-bordered w-full" />
+
+                <!-- Mood Textarea (Large) -->
+                <label class="block">
+                    <strong>Mood:</strong>
+                    <textarea name="mood" class="textarea textarea-bordered w-full h-24">{{ data.get('mood', '') }}</textarea>
                 </label>
             </div>
-            
-            <!-- Regenerate Button -->
-            <button type="submit" class="btn btn-primary mt-4">Regenerate</button>
-        </form>
-
-        <!-- Restart Button -->
-        <form method="GET" action="{{ url_for('index') }}" class="mt-4">
-            <button type="submit" class="btn btn-secondary">Restart</button>
-        </form>
-    </div>
+              <!-- Regenerate Button -->
+              <button type="submit" class="btn btn-primary w-full rounded-full text-m font-semibold mt-4">Regenerate<i data-lucide="refresh-ccw"></i></button>              
+            </form>
+        </aside>
     </div>
 
+    <script src="https://unpkg.com/lucide@latest"></script>
     <script>
+        lucide.createIcons();
+
         // Function to update font previews dynamically with custom text
         function updatePreviews() {
             const customText = document.getElementById('customText').value || 
@@ -133,6 +158,14 @@
             previews.forEach(preview => {
                 preview.textContent = customText;
             });
+        }
+
+         // Function to adjust font size based on slider value
+         function adjustFontSize(index, size) {
+            const preview = document.getElementById(`fontPreview${index}`);
+            const label = document.getElementById(`fontSizeLabel${index}`);
+            preview.style.fontSize = `${size}px`;
+            label.textContent = `${size}px`;
         }
     </script>
 </body>

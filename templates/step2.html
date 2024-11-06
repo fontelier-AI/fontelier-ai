@@ -2,47 +2,73 @@
 <html lang="en" data-theme="nord">
 
 <head>
-    <title>Welcome | Fontelier AI</title>
-
-    <!-- Include Tailwind CSS with DaisyUI plugin via CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <script>
-        // Tailwind + DaisyUI Config
-        tailwind.config = {
-            plugins: [daisyui],
-            daisyui: {
-                themes: ["nord"],
-            }
-        };
-    </script>
+    <title>Fontelier AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='output.css') }}">
 </head>
 
-<body class="bg-base-200 min-h-screen flex flex-col items-center justify-center space-y-4">
-    <!-- <div>
-        <ul class="steps w-full">
-            <li class="step step-primary"></li>
-            <li class="step"></li>
-            <li class="step"></li>
+<body class="bg-gradient min-h-screen flex flex-col items-center justify-start space-y-4">
+
+    <!-- Logo Section -->
+    <div class="w-full max-w-10xl flex justify-start p-4">
+        <a href="{{ url_for('index') }}">
+            <img src="{{ url_for('static', filename='fontelier-logo.svg') }}" alt="Logo" class="w-auto h-12">
+        </a>       
+    </div>
+
+    <!-- Breadcrumbs Nav -->
+    <div class="text-sm breadcrumbs w-full max-w-2xl flex justify-center px-4 mt-16 mb-6">
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('step1') }}">Design</a></li>
+            <li><span class="text-primary">Heading Style</span></li>
         </ul>
-    </div> -->
-    <progress class="progress progress-secondary w-96" value="30" max="100"></progress>
+    </div>
 
-    <!-- Form Container -->
-    <div>
-        <form method="POST" class="card w-96 bg-white shadow-xl p-6 rounded-lg space-y-4">
-            <h2 class="text-2xl font-bold text-primary text-center">Is this for a title, subtitle, body text, or something else?</h2>
+    <!-- Main Container -->
+    <div class="container mx-auto p-16 max-w-2xl text-center bg-white shadow-lg rounded-lg">
+        
+        <progress class="progress progress-secondary max-w-xl" value="30" max="100"></progress>
+        
+        <!-- Form Container -->
+        <form method="POST" class="card p-6 rounded-lg space-y-12">
+            <h2 class="text-3xl font-semibold text-primary">Is this for a title, subtitle, or body text?</h2>
+            <div class="grid grid-cols-3 gap-4">
+                <!-- Title Option -->
+                <label class="cursor-pointer w-full">
+                    <input type="radio" name="heading_type" value="Title" class="hidden peer">
+                    <div class="flex flex-col items-center justify-center w-full min-h-32 text-lg font-semibold text-gray-700 rounded-lg transition-all
+                                peer-checked:bg-gray-200 peer-checked:shadow-inner peer-checked:border-primary border border-gray-300">
+                        <!-- Icon Section -->
+                        <img src="{{ url_for('static', filename='title-icon.svg') }}" alt="Title Icon" class="w-12 h-12 mb-2"> <!-- Replace with actual icon path -->
+                        <span>Title</span>
+                    </div>
+                </label>
 
-            <select name="heading_type" class="select select-primary w-full">
-                <option disabled selected>Heading type</option>
-                <option>Title</option>
-                <option>Subtitle</option>
-                <option>Body Text</option>
-            </select>
+                <!-- Subtitle Option -->
+                <label class="cursor-pointer w-full">
+                    <input type="radio" name="heading_type" value="Subtitle" class="hidden peer">
+                    <div class="flex flex-col items-center justify-center w-full min-h-32 text-lg font-semibold text-gray-700 rounded-lg transition-all
+                                peer-checked:bg-gray-200 peer-checked:shadow-inner peer-checked:border-primary border border-gray-300">
+                        <!-- Icon Section -->
+                        <img src="{{ url_for('static', filename='subtitle-icon.svg') }}" alt="Subtitle Icon" class="w-12 h-12 mb-2"> <!-- Replace with actual icon path -->
+                        <span>Subtitle</span>
+                    </div>
+                </label>
+
+                <!-- Body Text Option -->
+                <label class="cursor-pointer w-full">
+                    <input type="radio" name="heading_type" value="Body Text" class="hidden peer">
+                    <div class="flex flex-col items-center justify-center w-full min-h-32 text-lg font-semibold text-gray-700 rounded-lg transition-all
+                                peer-checked:bg-gray-200 peer-checked:shadow-inner peer-checked:border-primary border border-gray-300">
+                        <!-- Icon Section -->
+                        <img src="{{ url_for('static', filename='body-text-icon.svg') }}" alt="Body Text Icon" class="w-12 h-12 mb-2"> <!-- Replace with actual icon path -->
+                        <span>Body Text</span>
+                    </div>
+                </label>
+            </div>
 
             <!-- Submit Button -->
-            <button type="submit" class="btn btn-primary transition-transform">
+            <button type="submit" class="btn btn-outline btn-primary w-full rounded-full text-lg font-semibold mt-6">
                 Next
             </button>
         </form>
