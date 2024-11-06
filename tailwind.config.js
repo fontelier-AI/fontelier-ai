@@ -1,8 +1,8 @@
 module.exports = {
   content: [
-    './templates/**/*.html',   // Add paths to your HTML template files
-    './static/**/*.css',       // Add paths to your CSS files if you use Tailwind classes in CSS
-    './**/*.py',               // Add this if you're using Jinja templates in Flask
+    './templates/**/*.html',   // Add paths to your HTML relevant files
+    './static/**/*.css',       
+    './**/*.py',               
   ],
   theme: {
     extend: {},

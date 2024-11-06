@@ -2,29 +2,41 @@
 <html lang="en" data-theme="nord">
 
 <head>
-    <title>Welcome | Fontelier AI</title>
+    <title>Fontelier AI</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='output.css') }}">
 </head>
 
-<body class="bg-gradient min-h-screen flex flex-col items-center justify-center space-y-4">
+<body class="bg-gradient min-h-screen flex flex-col items-center justify-start space-y-4">
+
+    <!-- Logo Section -->
+    <div class="w-full max-w-6xl flex justify-start p-4">
+      <img src="{{ url_for('static', filename='fontelier-logo.svg') }}" alt="Logo" class="w-auto h-12">
+  </div>
+
+    <!-- Breadcrumbs Nav -->
+    <div class="text-sm breadcrumbs w-full max-w-2xl flex justify-center px-4 mb-6">
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('step1') }}">Design</a></li>
+            <li><a href="{{ url_for('step2') }}">Heading Style</a></li>
+            <li><a href="{{ url_for('step3') }}">Use Case</a></li>
+            <li><span class="text-primary">Mood</span></li>
+        </ul>
+    </div>
 
     <!-- Form Container -->
     <div class="container mx-auto p-16 max-w-2xl text-center bg-white shadow-lg rounded-lg">
-        <!-- Logo Section -->
-        <div class="flex justify-center mb-4">
-            <img src="{{ url_for('static', filename='logo.svg') }}" alt="Logo" class="w-16 h-16">
-        </div>
     
         <progress class="progress progress-secondary max-w-xl" value="90" max="100"></progress>
        
         <form method="POST" class="card p-6 rounded-lg space-y-12">            
-            <h2 class="text-2xl font-bold text-primary text-center">What feelings or mood you want the typeface to imbue?</h2>
+            <h2 class="text-2xl font-bold text-primary text-center">What feelings, mood or style you want the typeface to imbue?</h2>
 
               <!-- Custom Prompt Input -->
               <div class="flex items-center border rounded-lg p-2 bg-white shadow-inner">
                 <textarea 
                     name="mood" 
-                    placeholder="Describe your fonts desired mood, style, or any other details..." 
+                    placeholder="...comic, bold and childlike..." 
                     class="textarea w-full px-4 py-2 focus:outline-none resize-none"
                     rows="3"></textarea>
             </div>
