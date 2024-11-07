@@ -1,8 +1,2 @@
-# .env
-# .venv/
-# env/
-# venv/
-# ENV/
-# env.bak/
-# venv.bak/
 api-key.txt
+node_modules/
