@@ -11,7 +11,7 @@ Smart font recommendations tailored to your design needs, powered by AI-driven i
 
 1. **Clone the repository**  
    ```bash
-   git clone git clone https://github.com/fontelier-AI/fontelier-ai
+   git clone https://github.com/fontelier-AI/fontelier-ai
    ```
 
 2. **Create an API key file**  
