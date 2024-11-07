@@ -114,6 +114,7 @@
             
         <!-- User Inputs Form -->
         <form method="POST" action="{{ url_for('result') }}">
+            <input type="hidden" name="action" value="regenerate">
             <div class="space-y-4">
                 <!-- Design Input (Small) -->
                 <label class="block">
