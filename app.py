@@ -213,6 +213,12 @@ def result():
         user_data['heading_type'] = request.form.get('heading_type', '')
         user_data['description'] = request.form.get('description', '')
         user_data['mood'] = request.form.get('mood', '')
+        action = request.form.get('action', '')
+
+        # Clear the cached embedding only if the regenerate button was clicked
+        if action == 'regenerate':
+            print("Regenerate action detected. Clearing cached embedding.")
+            user_data["embedding"] = None
 
     user_input = f"{user_data.get('option', '')} {user_data.get('heading_type', '')} {user_data.get('description', '')} {user_data.get('mood', '')}".strip()
 
