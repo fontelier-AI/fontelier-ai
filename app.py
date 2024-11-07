@@ -24,7 +24,8 @@ session_data = {
     "sorted_fonts": None,
     "top_font_history": [],
     "next_font_index": 3,  # Tracks the next font to use in sorted_fonts after the initial top 3
-    "justification": {}
+    "justification": {},
+    "bin": {}
 }
 
 # Load pre-computed font embeddings from CSV
@@ -183,6 +184,11 @@ def step4():
 @app.route('/remove_font/<int:index>', methods=['POST'])
 def remove_font(index):
     if session_data["sorted_fonts"] and "next_font_index" in session_data:
+        # Save the deleted font to bin
+        deleted_font = user_data["top_fonts"][index]
+        cache_key = f"{deleted_font}"
+        session_data["bin"][cache_key] = deleted_font  # Cache the justification
+
         # Remove the disliked font from top_fonts
         user_data["top_fonts"].pop(index)
 
@@ -253,7 +259,10 @@ def result():
     justification = generate_justification(user_input, user_data["top_fonts"])
     cleaned_justification = remove_characters(justification)
 
-    return render_template('result.html', data=user_data, api_result=top_fonts_with_links, cleaned_justification=cleaned_justification)
+    # Get deleted fonts (bin) from session_data
+    deleted_fonts = list(session_data.get("bin", {}).values())
+
+    return render_template('result.html', data=user_data, api_result=top_fonts_with_links, cleaned_justification=cleaned_justification, deleted_fonts=deleted_fonts)
 
 
 # Home route to restart

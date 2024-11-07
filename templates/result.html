@@ -11,6 +11,11 @@
         {% set formatted_font = font[0] %}
         <link href="https://fonts.googleapis.com/css?family={{ formatted_font | replace(' ', '+') }}&display=swap" rel="stylesheet">
     {% endfor %}
+
+    {% for font in deleted_fonts %}
+        {% set formatted_font = font[0] %}
+        <link href="https://fonts.googleapis.com/css?family={{ formatted_font | replace(' ', '+') }}&display=swap" rel="stylesheet">
+    {% endfor %}
 </head>
 
 <body class="bg-gradient min-h-screen flex flex-col items-center justify-start">
@@ -93,6 +98,45 @@
             <div class="border-primary">
                 <h3 class="text-xl font-semibold text-primary">Why are these fonts suitable?</h3>
                 <p class="mt-2 text-gray-600">{{ cleaned_justification }}</p>
+            </div>
+
+            <!-- Deleted fonts history section -->
+            <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-200 rounded-box">
+                <div class="collapse-title text-l font-semibold text-primary">
+                    View font recommendations history
+                </div>
+                <div class="collapse-content">
+                    {% if deleted_fonts %}
+                        <div class="overflow-x-auto">
+                            <table class="table w-full mt-4">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Font Name</th>
+                                        <th>Font Preview</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for font in deleted_fonts %}
+                                        <tr class="hover">
+                                            <th>{{ loop.index }}</th>
+                                            <td class="font-semibold">
+                                                <a href="https://fonts.google.com/specimen/{{ font[0] | replace(' ', '+') }}" target="_blank" class="font-link">
+                                                    {{ font[0].title() }}
+                                                </a>
+                                            </td>
+                                            <td style="font-family: '{{ font[0] }}'; font-size: 1.25rem;" class="preview">
+                                                The quick brown fox jumps over the lazy dog.
+                                            </td>
+                                        </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    {% else %}
+                        <p>No fonts have been deleted.</p>
+                    {% endif %}
+                </div>
             </div>
         </section>
 
