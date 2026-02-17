@@ -1,6 +1,15 @@
 # fontelier AI
 Smart font recommendations tailored to your design needs, powered by AI-driven insights.
 
+For more details and complete user flow, see our [case study](https://www.canva.com/design/DAGyXAWtLSs/aoln8W0cWPfcPb3ZW53QVg/view?embed)
+
+<img width="800" alt="Screenshot 2026-02-17 at 3 51 46 pm" src="https://github.com/user-attachments/assets/3ae23836-2798-4b89-998c-88ef49245b28" />
+<img width="800" alt="Screenshot 2026-02-17 at 3 52 01 pm" src="https://github.com/user-attachments/assets/412013db-595b-4f86-a874-49ee63c3e4a8" />
+<img width="800" alt="Screenshot 2026-02-17 at 3 52 20 pm" src="https://github.com/user-attachments/assets/d9629023-8030-4c09-a620-cf518c93423f" />
+
+
+
+
 ## Contributing to the Codebase
 - Always pull from main before starting any new work `git pull origin main`
 - Create a new branch for your work `git checkout -b feature/your-feature`
